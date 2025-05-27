@@ -1,0 +1,11 @@
+server/.venv
+server/letschatbuddy/.env
+
+server/letschatbuddy/__pycache__/
+server/letschatbuddy/**/*.pyc
+
+server/letschatbuddy/media/
+
+.vscode/
+.idea/
+
