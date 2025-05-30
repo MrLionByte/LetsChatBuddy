@@ -1,0 +1,36 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#4F46E5" stroke="#6366F1" stroke-width="3"/>
+
+  <!-- Main chat bubble -->
+  <rect x="40" y="55" rx="12" ry="12" width="70" height="40" fill="#FFFFFF" />
+  <circle cx="55" cy="75" r="4" fill="#4F46E5"/>
+  <circle cx="70" cy="75" r="4" fill="#4F46E5"/>
+  <circle cx="85" cy="75" r="4" fill="#4F46E5"/>
+
+  <!-- Reply chat bubble -->
+  <rect x="90" y="90" rx="12" ry="12" width="70" height="40" fill="#FEF3C7" />
+  <circle cx="105" cy="110" r="4" fill="#F59E0B"/>
+  <circle cx="120" cy="110" r="4" fill="#F59E0B"/>
+  <circle cx="135" cy="110" r="4" fill="#F59E0B"/>
+
+  <!-- Buddy Avatars -->
+  <!-- Buddy 1 -->
+  <circle cx="60" cy="150" r="10" fill="#FFFFFF"/>
+  <circle cx="60" cy="150" r="7" fill="#4F46E5"/>
+  <!-- Buddy 2 -->
+  <circle cx="100" cy="150" r="10" fill="#FFFFFF"/>
+  <circle cx="100" cy="150" r="7" fill="#F59E0B"/>
+  <!-- Buddy 3 -->
+  <circle cx="140" cy="150" r="10" fill="#FFFFFF"/>
+  <circle cx="140" cy="150" r="7" fill="#10B981"/>
+
+  <!-- Connection lines -->
+  <line x1="67" y1="150" x2="93" y2="150" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+  <line x1="107" y1="150" x2="133" y2="150" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+
+  <!-- App name -->
+  <text x="100" y="180" font-family="Verdana, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    L C B
+  </text>
+</svg>

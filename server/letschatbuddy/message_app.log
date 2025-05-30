@@ -1,0 +1,1347 @@
+INFO 2025-05-27 14:23:18,201 cli Starting server at tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-27 14:23:18,201 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-27 14:23:18,202 server Configuring endpoint tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-27 14:23:18,202 server Listening on TCP address 0.0.0.0:8000
+ERROR 2025-05-27 14:24:52,574 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:24:52,607 log Bad Request: /
+ERROR 2025-05-27 14:24:52,753 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:24:52,776 log Bad Request: /favicon.ico
+ERROR 2025-05-27 14:26:00,618 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:26:00,636 log Bad Request: /
+ERROR 2025-05-27 14:26:00,747 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:26:00,772 log Bad Request: /favicon.ico
+ERROR 2025-05-27 14:26:02,304 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:26:02,320 log Bad Request: /
+ERROR 2025-05-27 14:26:02,381 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:26:02,400 log Bad Request: /favicon.ico
+ERROR 2025-05-27 14:26:02,897 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:26:02,914 log Bad Request: /
+ERROR 2025-05-27 14:26:02,969 exception Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-05-27 14:26:02,988 log Bad Request: /favicon.ico
+INFO 2025-05-27 14:26:04,349 server Killed 0 pending application instances
+INFO 2025-05-27 14:26:05,848 cli Starting server at tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-27 14:26:05,848 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-27 14:26:05,848 server Configuring endpoint tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-27 14:26:05,849 server Listening on TCP address 0.0.0.0:8000
+INFO 2025-05-28 04:28:52,447 server Killed 0 pending application instances
+INFO 2025-05-28 04:29:01,016 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:29:08,278 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-28 04:29:08,278 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-28 04:29:08,278 server Listening on TCP address 127.0.0.1:8000
+ERROR 2025-05-28 04:29:11,890 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:11,925 log Bad Request: /
+WARNING 2025-05-28 04:29:11,926 runserver [31;1mHTTP GET / 400 [0.04, 127.0.0.1:56906][0m
+ERROR 2025-05-28 04:29:12,062 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:12,089 log Bad Request: /favicon.ico
+WARNING 2025-05-28 04:29:12,089 runserver [31;1mHTTP GET /favicon.ico 400 [0.03, 127.0.0.1:56906][0m
+ERROR 2025-05-28 04:29:27,768 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:27,788 log Bad Request: /
+WARNING 2025-05-28 04:29:27,789 runserver [31;1mHTTP GET / 400 [0.02, 127.0.0.1:56906][0m
+ERROR 2025-05-28 04:29:27,854 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:27,877 log Bad Request: /favicon.ico
+WARNING 2025-05-28 04:29:27,877 runserver [31;1mHTTP GET /favicon.ico 400 [0.03, 127.0.0.1:56906][0m
+ERROR 2025-05-28 04:29:28,895 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:28,911 log Bad Request: /
+WARNING 2025-05-28 04:29:28,912 runserver [31;1mHTTP GET / 400 [0.02, 127.0.0.1:56906][0m
+ERROR 2025-05-28 04:29:28,969 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:28,988 log Bad Request: /favicon.ico
+WARNING 2025-05-28 04:29:28,989 runserver [31;1mHTTP GET /favicon.ico 400 [0.02, 127.0.0.1:56906][0m
+ERROR 2025-05-28 04:29:29,470 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:29,487 log Bad Request: /
+WARNING 2025-05-28 04:29:29,488 runserver [31;1mHTTP GET / 400 [0.02, 127.0.0.1:56906][0m
+ERROR 2025-05-28 04:29:29,546 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/deprecation.py", line 132, in __acall__
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )(request)
+    ^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-28 04:29:29,563 log Bad Request: /favicon.ico
+WARNING 2025-05-28 04:29:29,564 runserver [31;1mHTTP GET /favicon.ico 400 [0.02, 127.0.0.1:56906][0m
+INFO 2025-05-28 04:29:32,821 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:29:36,375 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-28 04:29:36,375 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-28 04:29:36,375 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-28 04:29:38,864 runserver [32mHTTP GET / 301 [0.00, 127.0.0.1:55644][0m
+INFO 2025-05-28 04:29:54,103 runserver [32mHTTP GET /admin 301 [0.00, 127.0.0.1:55644][0m
+INFO 2025-05-28 04:30:19,889 runserver [32mHTTP GET /engine-room 301 [0.00, 127.0.0.1:55644][0m
+INFO 2025-05-28 04:32:08,791 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/settings.py changed, reloading.
+INFO 2025-05-28 04:33:06,530 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:33:10,025 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-28 04:33:10,025 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-28 04:33:10,026 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-28 04:34:38,602 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:34:42,253 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-28 04:34:42,253 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-28 04:34:42,254 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-28 04:35:29,031 runserver [32mHTTP GET /engine-room/ 302 [0.02, 127.0.0.1:56456][0m
+INFO 2025-05-28 04:35:29,056 runserver [mHTTP GET /engine-room/login/?next=/engine-room/ 200 [0.02, 127.0.0.1:56456][0m
+INFO 2025-05-28 04:35:29,093 runserver [mHTTP GET /static/admin/css/base.css 200 [0.02, 127.0.0.1:56456][0m
+INFO 2025-05-28 04:35:29,096 runserver [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.01, 127.0.0.1:56474][0m
+INFO 2025-05-28 04:35:29,097 runserver [mHTTP GET /static/admin/css/dark_mode.css 200 [0.02, 127.0.0.1:56468][0m
+INFO 2025-05-28 04:35:29,098 runserver [mHTTP GET /static/admin/js/theme.js 200 [0.01, 127.0.0.1:56504][0m
+INFO 2025-05-28 04:35:29,099 runserver [mHTTP GET /static/admin/css/login.css 200 [0.02, 127.0.0.1:56480][0m
+INFO 2025-05-28 04:35:29,099 runserver [mHTTP GET /static/admin/css/responsive.css 200 [0.02, 127.0.0.1:56490][0m
+INFO 2025-05-28 04:35:29,108 runserver [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.00, 127.0.0.1:56490][0m
+WARNING 2025-05-28 04:35:29,131 log Not Found: /favicon.ico
+WARNING 2025-05-28 04:35:29,132 runserver [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:56490][0m
+INFO 2025-05-28 04:37:24,946 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:37:25,562 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:37:27,384 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-28 04:37:27,384 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-28 04:37:27,385 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-28 04:37:28,873 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:37:29,483 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:37:33,855 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:37:34,605 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:37:51,160 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:37:51,859 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:38:02,288 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:38:02,923 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:38:25,445 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:38:26,086 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:38:41,499 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:38:42,116 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:38:55,513 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:38:56,119 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:39:04,490 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 04:39:05,209 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 04:44:48,357 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/urls.py changed, reloading.
+INFO 2025-05-28 04:44:48,962 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 05:00:06,724 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 05:00:53,988 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 05:02:22,968 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 05:03:51,190 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 05:03:51,789 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 05:04:41,594 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/middleware.py changed, reloading.
+INFO 2025-05-28 05:04:42,153 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 06:50:13,773 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 06:51:21,560 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 06:51:48,538 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 06:52:27,190 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 06:52:27,784 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 06:52:50,273 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 06:52:50,875 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 06:53:25,490 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/letschatbuddy/asgi.py changed, reloading.
+INFO 2025-05-28 06:53:26,072 autoreload Watching for file changes with StatReloader
+INFO 2025-05-28 06:53:28,989 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-28 06:53:28,989 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-28 06:53:28,989 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 06:31:21,702 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:31:29,193 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:31:30,124 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:31:44,688 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:31:45,452 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:31:51,791 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:31:52,692 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:32:00,119 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 06:32:00,119 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 06:32:00,127 server Listening on TCP address 127.0.0.1:8000
+WARNING 2025-05-29 06:32:15,185 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 06:32:15,186 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [0.01, 127.0.0.1:38274][0m
+INFO 2025-05-29 06:35:26,601 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:35:27,471 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:35:30,618 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 06:35:30,619 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 06:35:30,625 server Listening on TCP address 127.0.0.1:8000
+WARNING 2025-05-29 06:35:53,307 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 06:35:53,309 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [0.03, 127.0.0.1:51180][0m
+ERROR 2025-05-29 06:36:28,300 log Internal Server Error: /api/v1/accounts/signup/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py", line 56, in post
+    response = Response({
+               ^^^^^^^^
+NameError: name 'Response' is not defined
+ERROR 2025-05-29 06:36:28,309 runserver [35;1mHTTP POST /api/v1/accounts/signup/ 500 [3.90, 127.0.0.1:51180][0m
+INFO 2025-05-29 06:37:24,359 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:25,489 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:37:27,503 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 06:37:27,503 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 06:37:27,509 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 06:37:34,032 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:34,806 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:37:36,148 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:36,863 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:37:38,192 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:38,932 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:37:43,248 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:44,099 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:37:45,569 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:46,633 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:37:48,968 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:49,821 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:37:58,176 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 06:37:59,070 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:38:01,164 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 06:38:01,164 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 06:38:01,165 server Listening on TCP address 127.0.0.1:8000
+ERROR 2025-05-29 06:38:22,664 views Error in signup
+WARNING 2025-05-29 06:38:22,668 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 06:38:22,670 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [10.81, 127.0.0.1:41620][0m
+INFO 2025-05-29 06:38:46,195 runserver [32mHTTP GET /engine-room/ 302 [0.01, 127.0.0.1:60658][0m
+INFO 2025-05-29 06:38:46,225 runserver [mHTTP GET /engine-room/login/?next=/engine-room/ 200 [0.03, 127.0.0.1:60658][0m
+INFO 2025-05-29 06:38:46,318 runserver [mHTTP GET /static/admin/js/theme.js 200 [0.03, 127.0.0.1:60684][0m
+INFO 2025-05-29 06:38:46,319 runserver [mHTTP GET /static/admin/css/base.css 200 [0.03, 127.0.0.1:60658][0m
+INFO 2025-05-29 06:38:46,319 runserver [mHTTP GET /static/admin/css/responsive.css 200 [0.03, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:38:46,321 runserver [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.03, 127.0.0.1:60676][0m
+INFO 2025-05-29 06:38:46,323 runserver [mHTTP GET /static/admin/css/dark_mode.css 200 [0.03, 127.0.0.1:60700][0m
+INFO 2025-05-29 06:38:46,325 runserver [mHTTP GET /static/admin/css/login.css 200 [0.03, 127.0.0.1:60710][0m
+INFO 2025-05-29 06:38:46,334 runserver [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.00, 127.0.0.1:60672][0m
+WARNING 2025-05-29 06:38:48,264 log Not Found: /favicon.ico
+WARNING 2025-05-29 06:38:48,266 runserver [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:38:57,902 runserver [32mHTTP POST /engine-room/login/?next=/engine-room/ 302 [4.62, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:01,819 runserver [mHTTP GET /engine-room/ 200 [3.91, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:01,863 runserver [mHTTP GET /static/admin/css/dashboard.css 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:01,902 runserver [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.00, 127.0.0.1:60710][0m
+INFO 2025-05-29 06:39:01,903 runserver [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,289 runserver [mHTTP GET /engine-room/auth/user/ 200 [3.52, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,315 runserver [mHTTP GET /static/admin/css/changelists.css 200 [0.01, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,320 runserver [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.01, 127.0.0.1:60700][0m
+INFO 2025-05-29 06:39:07,344 runserver [mHTTP GET /static/admin/js/core.js 200 [0.01, 127.0.0.1:60700][0m
+INFO 2025-05-29 06:39:07,345 runserver [mHTTP GET /static/admin/js/jquery.init.js 200 [0.01, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,352 runserver [mHTTP GET /static/admin/js/actions.js 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,353 runserver [mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.00, 127.0.0.1:60700][0m
+INFO 2025-05-29 06:39:07,361 runserver [mHTTP GET /static/admin/js/prepopulate.js 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,362 runserver [mHTTP GET /static/admin/js/urlify.js 200 [0.00, 127.0.0.1:60700][0m
+INFO 2025-05-29 06:39:07,372 runserver [mHTTP GET /static/admin/img/icon-yes.svg 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,374 runserver [mHTTP GET /static/admin/img/search.svg 200 [0.01, 127.0.0.1:60676][0m
+INFO 2025-05-29 06:39:07,375 runserver [mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.01, 127.0.0.1:60700][0m
+INFO 2025-05-29 06:39:07,381 runserver [mHTTP GET /static/admin/img/icon-no.svg 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:07,390 runserver [mHTTP GET /static/admin/js/filters.js 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:14,709 runserver [mHTTP GET /engine-room/jsi18n/ 200 [7.40, 127.0.0.1:60710][0m
+INFO 2025-05-29 06:39:14,746 runserver [mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:60710][0m
+INFO 2025-05-29 06:39:14,747 runserver [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.01, 127.0.0.1:60700][0m
+INFO 2025-05-29 06:39:14,748 runserver [mHTTP GET /static/admin/img/sorting-icons.svg 200 [0.01, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:27,455 runserver [mHTTP POST /engine-room/auth/user/ 200 [4.21, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:27,486 runserver [mHTTP GET /static/admin/js/cancel.js 200 [0.00, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:40,340 runserver [32mHTTP POST /engine-room/auth/user/ 302 [8.25, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:45,484 runserver [mHTTP GET /engine-room/auth/user/ 200 [5.14, 127.0.0.1:60672][0m
+INFO 2025-05-29 06:39:48,430 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.88, 127.0.0.1:60672][0m
+ERROR 2025-05-29 06:39:58,421 log Internal Server Error: /api/v1/accounts/signup/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py", line 58, in post
+    'user': UserSerializer(self.request.user).data,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `email` on serializer `UserSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `AnonymousUser` instance.
+Original exception text was: 'AnonymousUser' object has no attribute 'email'.
+ERROR 2025-05-29 06:39:58,429 runserver [35;1mHTTP POST /api/v1/accounts/signup/ 500 [3.05, 127.0.0.1:60050][0m
+INFO 2025-05-29 06:41:12,628 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 06:41:13,279 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 06:41:15,546 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 06:41:15,546 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 06:41:15,554 server Listening on TCP address 127.0.0.1:8000
+ERROR 2025-05-29 06:41:19,025 views Error in signup
+WARNING 2025-05-29 06:41:19,028 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 06:41:19,029 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [2.71, 127.0.0.1:48218][0m
+INFO 2025-05-29 06:41:31,084 runserver [mHTTP GET /engine-room/auth/user/ 200 [3.48, 127.0.0.1:40218][0m
+INFO 2025-05-29 06:41:33,799 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.62, 127.0.0.1:40218][0m
+ERROR 2025-05-29 06:41:50,492 log Internal Server Error: /api/v1/accounts/signup/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py", line 58, in post
+    'user': UserSerializer(self.request.user).data,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `email` on serializer `UserSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `AnonymousUser` instance.
+Original exception text was: 'AnonymousUser' object has no attribute 'email'.
+ERROR 2025-05-29 06:41:50,499 runserver [35;1mHTTP POST /api/v1/accounts/signup/ 500 [3.24, 127.0.0.1:48218][0m
+INFO 2025-05-29 06:42:10,454 runserver [mHTTP GET /engine-room/auth/user/ 200 [3.91, 127.0.0.1:40218][0m
+INFO 2025-05-29 06:42:12,840 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.27, 127.0.0.1:40218][0m
+INFO 2025-05-29 06:42:22,694 runserver [mHTTP GET /engine-room/auth/user/3/change/ 200 [7.61, 127.0.0.1:40218][0m
+INFO 2025-05-29 06:42:22,755 runserver [mHTTP GET /static/admin/css/forms.css 200 [0.02, 127.0.0.1:40218][0m
+INFO 2025-05-29 06:42:22,760 runserver [mHTTP GET /static/admin/js/SelectBox.js 200 [0.01, 127.0.0.1:34754][0m
+INFO 2025-05-29 06:42:22,763 runserver [mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 200 [0.02, 127.0.0.1:34748][0m
+INFO 2025-05-29 06:42:22,763 runserver [mHTTP GET /static/admin/js/calendar.js 200 [0.02, 127.0.0.1:34736][0m
+INFO 2025-05-29 06:42:22,764 runserver [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.02, 127.0.0.1:34770][0m
+INFO 2025-05-29 06:42:22,772 runserver [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.01, 127.0.0.1:40218][0m
+INFO 2025-05-29 06:42:22,784 runserver [mHTTP GET /static/admin/css/widgets.css 200 [0.01, 127.0.0.1:34736][0m
+INFO 2025-05-29 06:42:22,800 runserver [mHTTP GET /static/admin/js/change_form.js 200 [0.00, 127.0.0.1:34736][0m
+INFO 2025-05-29 06:42:26,972 runserver [mHTTP GET /engine-room/jsi18n/ 200 [4.23, 127.0.0.1:40220][0m
+INFO 2025-05-29 06:42:27,290 runserver [mHTTP GET /static/admin/img/selector-icons.svg 200 [0.01, 127.0.0.1:40220][0m
+INFO 2025-05-29 06:42:27,290 runserver [mHTTP GET /static/admin/img/icon-calendar.svg 200 [0.01, 127.0.0.1:34736][0m
+INFO 2025-05-29 06:42:27,292 runserver [mHTTP GET /static/admin/img/icon-clock.svg 200 [0.01, 127.0.0.1:40218][0m
+INFO 2025-05-29 08:48:38,212 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 08:48:41,389 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 08:48:44,338 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 08:48:46,430 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 08:49:14,283 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 08:49:17,969 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 08:49:17,969 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 08:49:17,976 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 08:49:25,209 runserver [mHTTP GET /engine-room/auth/user/ 200 [3.81, 127.0.0.1:55850][0m
+INFO 2025-05-29 08:49:27,397 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.08, 127.0.0.1:55850][0m
+INFO 2025-05-29 08:49:43,782 runserver [mHTTP POST /engine-room/auth/user/ 200 [4.30, 127.0.0.1:55850][0m
+INFO 2025-05-29 08:49:55,113 runserver [32mHTTP POST /engine-room/auth/user/ 302 [6.12, 127.0.0.1:55850][0m
+INFO 2025-05-29 08:49:58,229 runserver [mHTTP GET /engine-room/auth/user/ 200 [3.05, 127.0.0.1:55850][0m
+INFO 2025-05-29 08:50:00,369 runserver [mHTTP GET /engine-room/jsi18n/ 200 [1.97, 127.0.0.1:55850][0m
+INFO 2025-05-29 08:50:17,912 runserver [mHTTP POST /api/v1/accounts/signup/ 201 [4.51, 127.0.0.1:53586][0m
+WARNING 2025-05-29 08:52:02,115 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 08:52:02,116 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [4.50, 127.0.0.1:34902][0m
+INFO 2025-05-29 08:53:03,610 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 08:53:05,699 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 08:53:09,098 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 08:53:09,098 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 08:53:09,101 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 08:53:43,398 runserver [mHTTP GET /engine-room/auth/user/ 200 [2.64, 127.0.0.1:43974][0m
+INFO 2025-05-29 08:53:45,935 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.34, 127.0.0.1:43974][0m
+INFO 2025-05-29 08:53:56,273 runserver [mHTTP GET /engine-room/auth/user/5/change/ 200 [3.75, 127.0.0.1:43990][0m
+INFO 2025-05-29 08:53:58,319 runserver [mHTTP GET /engine-room/jsi18n/ 200 [1.96, 127.0.0.1:43990][0m
+INFO 2025-05-29 08:54:14,152 runserver [32mHTTP POST /engine-room/auth/user/5/change/ 302 [3.89, 127.0.0.1:43990][0m
+INFO 2025-05-29 08:54:15,881 runserver [mHTTP GET /engine-room/auth/user/add/ 200 [1.72, 127.0.0.1:43990][0m
+INFO 2025-05-29 08:54:16,009 runserver [mHTTP GET /static/admin/css/unusable_password_field.css 200 [0.03, 127.0.0.1:39558][0m
+INFO 2025-05-29 08:54:16,041 runserver [mHTTP GET /static/admin/js/unusable_password_field.js 200 [0.00, 127.0.0.1:39558][0m
+INFO 2025-05-29 08:54:17,744 runserver [mHTTP GET /engine-room/jsi18n/ 200 [1.77, 127.0.0.1:43990][0m
+INFO 2025-05-29 08:54:28,584 runserver [mHTTP GET /engine-room/auth/user/ 200 [2.54, 127.0.0.1:39558][0m
+INFO 2025-05-29 08:54:30,754 runserver [mHTTP GET /engine-room/jsi18n/ 200 [1.66, 127.0.0.1:39558][0m
+INFO 2025-05-29 08:54:53,336 runserver [mHTTP POST /api/v1/accounts/login/ 200 [6.21, 127.0.0.1:53350][0m
+INFO 2025-05-29 09:59:10,293 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 09:59:11,038 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 09:59:12,301 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 09:59:12,971 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 09:59:14,216 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 09:59:14,836 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 09:59:16,084 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 09:59:16,740 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 09:59:18,858 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 09:59:18,858 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 09:59:18,862 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 09:59:19,134 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 09:59:19,807 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 09:59:21,068 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 09:59:21,624 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 09:59:23,485 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 09:59:23,485 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 09:59:23,485 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 10:16:09,704 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.00, 127.0.0.1:56580][0m
+ERROR 2025-05-29 10:16:11,974 views Error in signup
+WARNING 2025-05-29 10:16:11,976 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 10:16:11,977 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [2.27, 127.0.0.1:56596][0m
+INFO 2025-05-29 12:30:40,068 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.00, 127.0.0.1:60266][0m
+ERROR 2025-05-29 12:30:44,842 views Error in signup
+WARNING 2025-05-29 12:30:44,844 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 12:30:44,845 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [4.77, 127.0.0.1:60282][0m
+INFO 2025-05-29 12:51:04,298 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.00, 127.0.0.1:58866][0m
+ERROR 2025-05-29 12:51:09,074 views Error in signup
+WARNING 2025-05-29 12:51:09,076 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 12:51:09,076 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [4.78, 127.0.0.1:58876][0m
+INFO 2025-05-29 12:51:36,131 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.00, 127.0.0.1:58866][0m
+ERROR 2025-05-29 12:51:37,832 views Error in signup
+WARNING 2025-05-29 12:51:37,834 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 12:51:37,834 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [1.70, 127.0.0.1:58876][0m
+INFO 2025-05-29 12:52:26,893 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:52:27,486 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:52:29,334 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:52:29,335 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:52:29,335 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 12:52:29,809 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:52:30,473 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:52:32,466 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:52:32,466 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:52:32,470 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 12:52:32,805 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:52:33,460 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:52:37,332 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:52:37,332 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:52:37,336 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 12:52:38,409 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.00, 127.0.0.1:58236][0m
+ERROR 2025-05-29 12:52:41,975 views Error in signup
+WARNING 2025-05-29 12:52:41,978 log Bad Request: /api/v1/accounts/signup/
+WARNING 2025-05-29 12:52:41,980 runserver [31;1mHTTP POST /api/v1/accounts/signup/ 400 [3.57, 127.0.0.1:58250][0m
+INFO 2025-05-29 12:53:41,675 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 12:53:42,288 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:53:43,543 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 12:53:44,099 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:53:46,756 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:53:46,759 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:53:46,759 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 12:54:25,344 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.00, 127.0.0.1:53662][0m
+INFO 2025-05-29 12:54:29,458 runserver [mHTTP POST /api/v1/accounts/signup/ 201 [4.11, 127.0.0.1:53678][0m
+INFO 2025-05-29 12:57:00,946 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:57:01,579 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:57:07,830 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:57:08,439 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:57:10,942 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:57:10,942 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:57:10,943 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 12:57:11,811 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:57:12,438 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:57:13,697 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:57:14,323 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:57:17,088 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:57:17,089 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:57:17,089 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 12:57:19,656 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:57:20,329 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:57:21,594 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:57:22,231 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:57:24,477 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 12:57:25,083 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:57:27,848 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:57:27,848 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:57:27,848 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 12:58:26,108 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/urls.py changed, reloading.
+INFO 2025-05-29 12:58:26,733 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 12:58:31,020 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 12:58:31,021 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 12:58:31,021 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 13:00:13,117 views User signed up successfully kesyzybi
+INFO 2025-05-29 13:00:13,119 runserver [mHTTP POST /api/v1/accounts/signup/ 201 [4.96, 127.0.0.1:35376][0m
+INFO 2025-05-29 14:43:38,891 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:35676][0m
+WARNING 2025-05-29 14:43:38,898 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:43:38,899 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [0.01, 127.0.0.1:35692][0m
+INFO 2025-05-29 14:44:02,156 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:35676][0m
+WARNING 2025-05-29 14:44:02,163 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:44:02,164 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [0.01, 127.0.0.1:35692][0m
+INFO 2025-05-29 14:45:12,389 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:47238][0m
+INFO 2025-05-29 14:45:15,414 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:47238][0m
+INFO 2025-05-29 14:45:17,251 views User logged-in successfully sampleUser2Name
+INFO 2025-05-29 14:45:18,895 views User logged-in successfully sampleUser2Name
+INFO 2025-05-29 14:45:35,423 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:47238][0m
+WARNING 2025-05-29 14:45:39,271 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:45:39,272 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [3.84, 127.0.0.1:39758][0m
+INFO 2025-05-29 14:47:12,023 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:47:12,581 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:47:13,882 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:47:14,581 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:47:15,827 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:47:16,432 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:47:17,667 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:47:18,348 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:47:22,005 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:47:22,006 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:47:22,006 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:47:22,709 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:47:23,442 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:47:24,732 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:47:25,329 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:47:26,612 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:47:27,198 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:47:31,100 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:47:31,100 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:47:31,100 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:47:39,675 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:37212][0m
+WARNING 2025-05-29 14:47:44,096 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:47:44,097 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [4.42, 127.0.0.1:37228][0m
+INFO 2025-05-29 14:48:40,414 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:48:41,070 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:48:42,341 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:48:42,960 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:48:45,209 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:48:45,836 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:48:48,083 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:48:48,706 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:48:49,964 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:48:50,656 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:48:51,931 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:48:52,496 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:48:55,380 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:48:55,381 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:48:55,381 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:49:03,908 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:04,540 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:06,797 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:07,492 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:08,737 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:09,310 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:12,155 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:49:12,155 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:49:12,156 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:49:12,624 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:13,238 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:15,497 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:16,182 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:18,833 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:49:18,833 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:49:18,834 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:49:21,786 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:38322][0m
+WARNING 2025-05-29 14:49:26,084 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:49:26,085 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [4.30, 127.0.0.1:38324][0m
+INFO 2025-05-29 14:49:45,885 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:46,628 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:47,867 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:48,505 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:50,780 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:51,447 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:53,727 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:54,310 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:49:55,549 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py changed, reloading.
+INFO 2025-05-29 14:49:56,178 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:50:58,644 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:51:04,738 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:51:04,738 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:51:04,738 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:51:17,410 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:44376][0m
+WARNING 2025-05-29 14:51:19,788 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:51:19,789 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [2.38, 127.0.0.1:41920][0m
+INFO 2025-05-29 14:52:40,152 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:52:40,815 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:52:43,064 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:52:43,747 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:52:45,059 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:52:45,728 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:52:48,995 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:52:49,659 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:52:53,929 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:52:54,580 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:52:57,869 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:52:58,561 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:52:59,822 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:00,459 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:03,946 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:53:03,949 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:53:03,950 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:53:06,846 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:07,491 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:08,747 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:09,325 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:10,592 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:11,252 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:12,507 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:13,142 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:16,431 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:17,089 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:18,350 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:18,962 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:21,274 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:21,928 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:23,187 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py changed, reloading.
+INFO 2025-05-29 14:53:23,803 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 14:53:30,352 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 14:53:30,353 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 14:53:30,353 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 14:53:45,187 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:51826][0m
+WARNING 2025-05-29 14:53:49,507 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:53:49,508 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [4.32, 127.0.0.1:51842][0m
+INFO 2025-05-29 14:54:59,950 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:57074][0m
+WARNING 2025-05-29 14:55:03,809 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:55:03,810 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [3.86, 127.0.0.1:57088][0m
+INFO 2025-05-29 14:55:55,139 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:57074][0m
+INFO 2025-05-29 14:56:04,253 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:57074][0m
+WARNING 2025-05-29 14:56:05,809 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-05-29 14:56:05,809 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [1.55, 127.0.0.1:39478][0m
+INFO 2025-05-29 14:56:18,632 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:57074][0m
+INFO 2025-05-29 14:56:24,450 views User logged-in successfully sampleUser2Name
+INFO 2025-05-29 14:56:25,982 runserver [mHTTP POST /api/v1/accounts/login/ 200 [7.35, 127.0.0.1:39478][0m
+INFO 2025-05-29 15:02:20,437 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.00, 127.0.0.1:44180][0m
+INFO 2025-05-29 15:02:24,980 views User signed up successfully xadoky
+INFO 2025-05-29 15:02:24,983 runserver [mHTTP POST /api/v1/accounts/signup/ 201 [4.54, 127.0.0.1:44188][0m
+INFO 2025-05-29 15:06:41,594 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:06:42,224 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:06:54,469 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:06:55,003 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:06:56,225 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:06:56,855 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:06:58,026 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:06:58,622 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:06:59,791 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:00,310 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:02,477 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:03,069 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:04,239 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:04,863 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:07,038 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:07,616 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:08,782 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:09,436 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:10,607 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:11,196 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:12,396 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:13,009 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:15,181 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:15,776 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:16,941 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:17,519 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:18,688 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:19,268 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:22,227 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:07:22,227 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:07:22,228 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:07:23,644 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:24,225 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:25,394 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:25,977 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:35,191 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:35,836 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:37,016 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:37,594 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:43,807 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:44,396 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:51,596 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:52,147 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:53,312 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:53,880 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:58,059 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:07:58,668 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:07:59,903 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:00,544 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:01,716 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:02,384 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:03,644 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:04,242 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:09,426 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:10,082 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:11,249 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:11,886 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:13,052 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:13,648 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:14,848 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:15,400 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:18,574 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:19,191 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:21,376 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:21,990 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:27,182 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:27,734 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:30,906 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:31,443 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:32,689 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:33,265 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:34,431 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:35,020 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:38,301 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:38,914 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:41,147 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:41,725 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:43,481 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:08:43,481 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:08:43,482 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:08:48,070 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:48,605 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:49,833 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:08:50,469 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:08:59,678 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:00,269 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:02,448 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:03,025 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:04,193 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:04,743 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:08,922 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:09,531 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:10,727 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:11,259 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:15,433 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:15,981 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:17,145 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:17,761 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:56,349 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:09:57,026 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:09:59,723 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:09:59,724 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:09:59,724 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:10:06,446 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:07,230 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:08,511 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:09,119 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:10,312 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:10,901 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:13,076 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:13,657 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:14,819 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:15,457 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:17,749 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:18,418 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:19,584 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:20,238 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:21,410 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:21,996 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:26,550 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:10:26,550 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:10:26,550 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:10:33,425 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:34,049 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:35,293 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:35,909 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:37,092 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:37,786 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:39,058 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-05-29 15:10:39,658 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:10:42,014 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:10:42,015 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:10:42,015 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:11:48,136 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:11:53,793 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:11:53,793 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:11:53,794 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:12:17,467 runserver [mHTTP POST /engine-room/auth/user/ 200 [6.81, 127.0.0.1:52434][0m
+INFO 2025-05-29 15:12:17,588 runserver [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:52434][0m
+INFO 2025-05-29 15:12:17,606 runserver [36mHTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:52434][0m
+INFO 2025-05-29 15:12:17,610 runserver [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:52444][0m
+INFO 2025-05-29 15:12:17,611 runserver [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:34944][0m
+INFO 2025-05-29 15:12:17,612 runserver [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:34952][0m
+INFO 2025-05-29 15:12:17,615 runserver [36mHTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:34972][0m
+INFO 2025-05-29 15:12:17,616 runserver [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:34964][0m
+INFO 2025-05-29 15:12:17,633 runserver [36mHTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:52434][0m
+INFO 2025-05-29 15:12:17,634 runserver [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:34952][0m
+INFO 2025-05-29 15:12:17,638 runserver [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:52444][0m
+INFO 2025-05-29 15:12:17,639 runserver [36mHTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:34944][0m
+INFO 2025-05-29 15:12:17,643 runserver [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:34964][0m
+INFO 2025-05-29 15:12:17,644 runserver [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:34972][0m
+INFO 2025-05-29 15:12:17,655 runserver [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:34972][0m
+INFO 2025-05-29 15:12:17,659 runserver [36mHTTP GET /static/admin/js/cancel.js 304 [0.00, 127.0.0.1:34964][0m
+INFO 2025-05-29 15:12:17,684 runserver [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:34964][0m
+INFO 2025-05-29 15:12:25,647 runserver [32mHTTP POST /engine-room/auth/user/ 302 [7.12, 127.0.0.1:34964][0m
+INFO 2025-05-29 15:12:31,106 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:33,895 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:35,128 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:35,781 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:37,015 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:37,635 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:38,876 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:39,449 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:42,679 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:43,259 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:44,516 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:45,145 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:48,068 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:12:48,068 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:12:48,068 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:12:48,499 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:49,109 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:50,326 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:50,960 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:12:52,185 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:12:52,722 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:13:42,205 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:13:42,830 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:13:45,069 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:13:45,680 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:13:46,904 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/admin.py changed, reloading.
+INFO 2025-05-29 15:13:47,443 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:14:05,482 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:14:15,368 autoreload Watching for file changes with StatReloader
+INFO 2025-05-29 15:14:17,960 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:14:17,960 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-05-29 15:14:17,961 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-05-29 15:14:25,879 runserver [mHTTP GET /engine-room/auth/user/ 200 [4.83, 127.0.0.1:44924][0m
+INFO 2025-05-29 15:14:25,995 runserver [36mHTTP GET /static/admin/css/changelists.css 304 [0.01, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:14:26,024 runserver [36mHTTP GET /static/admin/img/icon-no.svg 304 [0.00, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:26,025 runserver [36mHTTP GET /static/admin/img/search.svg 304 [0.01, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:14:26,031 runserver [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.00, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:14:26,039 runserver [36mHTTP GET /static/admin/js/filters.js 304 [0.00, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:14:32,055 runserver [mHTTP GET /engine-room/jsi18n/ 200 [6.07, 127.0.0.1:44924][0m
+INFO 2025-05-29 15:14:32,093 runserver [36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.00, 127.0.0.1:44924][0m
+INFO 2025-05-29 15:14:32,094 runserver [36mHTTP GET /static/admin/img/sorting-icons.svg 304 [0.00, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:14:32,095 runserver [36mHTTP GET /static/admin/img/icon-viewlink.svg 304 [0.00, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:39,991 runserver [mHTTP GET /engine-room/accounts/account/ 200 [4.57, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:44,700 runserver [mHTTP GET /engine-room/jsi18n/ 200 [4.68, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:54,738 runserver [mHTTP GET /engine-room/accounts/account/add/ 200 [6.71, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:54,770 runserver [36mHTTP GET /static/admin/css/forms.css 304 [0.00, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:54,776 runserver [36mHTTP GET /static/admin/js/prepopulate_init.js 304 [0.00, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:54,800 runserver [36mHTTP GET /static/admin/css/widgets.css 304 [0.00, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:54,806 runserver [36mHTTP GET /static/admin/img/icon-changelink.svg 304 [0.00, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:54,810 runserver [36mHTTP GET /static/admin/js/change_form.js 304 [0.00, 127.0.0.1:44932][0m
+INFO 2025-05-29 15:14:58,628 runserver [mHTTP GET /engine-room/jsi18n/ 200 [3.86, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:15:19,105 runserver [32mHTTP POST /engine-room/accounts/account/add/ 302 [5.85, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:15:23,525 runserver [mHTTP GET /engine-room/accounts/account/ 200 [4.42, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:15:29,352 runserver [mHTTP GET /engine-room/jsi18n/ 200 [5.80, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:15:37,038 runserver [mHTTP GET /engine-room/auth/user/ 200 [5.13, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:15:40,619 runserver [mHTTP GET /engine-room/jsi18n/ 200 [3.55, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:15:54,808 runserver [mHTTP POST /engine-room/auth/user/ 200 [7.74, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:16:03,549 runserver [32mHTTP POST /engine-room/auth/user/ 302 [7.19, 127.0.0.1:44928][0m
+INFO 2025-05-29 15:16:09,792 runserver [32mHTTP POST /engine-room/auth/user/ 302 [2.88, 127.0.0.1:38226][0m
+INFO 2025-05-29 15:16:16,306 runserver [mHTTP GET /engine-room/auth/user/ 200 [6.51, 127.0.0.1:38226][0m
+INFO 2025-05-29 15:16:20,962 runserver [mHTTP GET /engine-room/jsi18n/ 200 [4.63, 127.0.0.1:38226][0m
+INFO 2025-05-29 15:16:43,626 cli Starting server at tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-29 15:16:43,626 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:16:43,626 server Configuring endpoint tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-29 15:16:43,627 server Listening on TCP address 0.0.0.0:8000
+INFO 2025-05-29 15:21:01,744 views User signed up successfully gidaletu
+INFO 2025-05-29 15:23:05,232 views User signed up successfully cufixifoke
+INFO 2025-05-29 15:24:35,757 views User signed up successfully didejatewo
+INFO 2025-05-29 15:30:51,880 views User signed up successfully pipovibyg
+INFO 2025-05-29 15:32:19,533 views User signed up successfully tixora
+INFO 2025-05-29 15:35:31,176 server Killed 0 pending application instances
+INFO 2025-05-29 15:35:33,063 cli Starting server at tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-29 15:35:33,063 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:35:33,063 server Configuring endpoint tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-29 15:35:33,064 server Listening on TCP address 0.0.0.0:8000
+ERROR 2025-05-29 15:35:50,506 log Internal Server Error: /api/v1/accounts/signup/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/views.py", line 56, in post
+    user = serializer.save()
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/serializers.py", line 49, in create
+    print("✅ Account created for", account.user.username, "with avatar", account.avatar_pic)
+                                    ^^^^^^^
+NameError: name 'account' is not defined. Did you mean: 'Account'?
+INFO 2025-05-29 15:36:17,712 server Killed 0 pending application instances
+INFO 2025-05-29 15:36:18,952 cli Starting server at tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-29 15:36:18,953 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-05-29 15:36:18,953 server Configuring endpoint tcp:port=8000:interface=0.0.0.0
+INFO 2025-05-29 15:36:18,953 server Listening on TCP address 0.0.0.0:8000
+INFO 2025-05-29 15:36:32,139 views User signed up successfully kubih
+INFO 2025-05-29 16:08:13,939 server Killed 0 pending application instances
