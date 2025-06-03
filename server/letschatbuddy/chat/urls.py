@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import DiscoverUserView
+from .views import SuggestedFriendsAPIView
 
 
 urlpatterns = [
-    path('discover-user/', DiscoverUserView.as_view(), name='logout'),
+    path('suggested-friends/', SuggestedFriendsAPIView.as_view(), name='logout'),
     
 ]

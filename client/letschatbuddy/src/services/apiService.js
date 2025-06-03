@@ -18,3 +18,20 @@ export const authService = {
         return response.data;
     },
 };
+
+export const chatService = {
+    getSuggestedFriends: async () => {
+        const response = await api.get(API_ENDPOINTS.chat.suggestedFriends);
+        return response.data;
+    },
+
+    sendInterest: async (userId) => {
+        const response = await api.post(API_ENDPOINTS.chat.interests, { userId });
+        return response.data;
+    },
+
+    getActiveChats: async () => {
+        const response = await api.get(API_ENDPOINTS.chat.activeChats);
+        return response.data;
+    },
+};

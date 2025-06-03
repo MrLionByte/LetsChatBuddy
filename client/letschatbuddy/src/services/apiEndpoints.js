@@ -7,7 +7,9 @@ const API_ENDPOINTS = {
     },
 
     chat: {
-        
+      suggestedFriends: 'chat/suggested-friends/',
+      interests: 'chat/interests/',
+      activeChats: 'chat/active-chats/',
     }
 };
   

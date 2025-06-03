@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser, Group, Permission
 
 
 class CustomUser(AbstractUser):
-    avatar_pic = models.CharField(max_length=255, blank=True, null=True)
+    avatar = models.CharField(max_length=255, blank=True, null=True)
     bio = models.TextField(blank=True)
     tags = models.TextField(blank=True)
     friend_count = models.PositiveIntegerField(default=0)
