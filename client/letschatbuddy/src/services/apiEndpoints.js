@@ -9,6 +9,9 @@ const API_ENDPOINTS = {
     chat: {
       suggestedFriends: 'chat/suggested-friends/',
       interests: 'chat/interests/',
+      sendedInterests: 'chat/interests-send/',
+      receivedInterests: 'chat/interests-receive/',
+      InterestAction: 'chat/interests-action/',
       activeChats: 'chat/active-chats/',
     }
 };

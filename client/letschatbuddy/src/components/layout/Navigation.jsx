@@ -1,11 +1,12 @@
-import { Users, MessageCircle, MessageSquareDashed, Bell } from 'lucide-react'
+import { Users, MessageCircle, MessageSquareDashed, Bell, Send } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const Navigation = ({ activeTab, onTabChange, interestCount, chatCount }) => {
   const tabs = [
     { id: 'discover', label: 'Discover', icon: <Users className="w-5 h-5" /> },
     { id: 'random', label: 'Random-Chats', icon: <MessageSquareDashed className="w-5 h-5" />, },
-    { id: 'interests', label: 'Interests', icon: <Bell className="w-5 h-5" />, count: interestCount },
+    { id: 'interests', label: 'Interests', icon: <Send className="w-5 h-5" />, count: interestCount },
+    { id: 'requests', label: 'Received', icon: <Bell className="w-5 h-5" />, count: interestCount },
     { id: 'chats', label: 'Chats', icon: <MessageCircle className="w-5 h-5" />, count: chatCount },
   ]
 

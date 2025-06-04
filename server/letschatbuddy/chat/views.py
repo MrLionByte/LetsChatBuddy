@@ -17,7 +17,9 @@ from .models import (
 )
 
 from .serializers import (
-    UserSuggestionSerializer
+    UserSuggestionSerializer,
+    InterestSendSerializer,
+    InterestReceiveSerializer
 )
 
 logger = logging.getLogger(__name__)
@@ -66,7 +68,7 @@ class SuggestedFriendsAPIView(NonSuperuserQuerysetMixin,generics.ListAPIView):
         return queryset.order_by('?')[:30]
                     
                     
-class SendInterestRequestAPIView(generics.CreateAPIView):
+class InterestCreateAPIView(generics.CreateAPIView):
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = UserSuggestionSerializer
 
@@ -85,5 +87,66 @@ class SendInterestRequestAPIView(generics.CreateAPIView):
         Interest.objects.get_or_create(sender=user, receiver=receiver)
         
         return Response({"message": "Interest request sent successfully."}, status=status.HTTP_201_CREATED)
+    
+    
+class InterestSentListAPIView(generics.ListAPIView):
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = InterestSendSerializer
+
+    def get_queryset(self):
+        user = self.request.user
+        return Interest.objects.filter(
+            sender=user,
+            status='pending').order_by(
+                '-timestamp')
+    
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
+    
+    
+class InterestReceivedListAPIView(generics.ListAPIView):
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = InterestReceiveSerializer
+
+    def get_queryset(self):
+        user = self.request.user
+        return Interest.objects.filter(
+            receiver=user,
+            status='pending').order_by(
+                '-timestamp')
+    
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
+    
+    
+class InterestActionAPIView(views.APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request, *args, **kwargs):
+        user = request.user
+        interest_id = request.data.get('interest_id')
+        action = request.data.get('action')
+
+        if not interest_id or not action:
+            raise ValidationError("Interest ID and action are required.")
+
+        try:
+            interest = Interest.objects.get(id=interest_id, receiver=user)
+        except Interest.DoesNotExist:
+            raise ValidationError("Interest does not exist or you are not the receiver.")
+
+        if action == 'accept':
+            interest.status = 'accepted'
+        elif action == 'reject':
+            interest.status = 'rejected'
+        else:
+            raise ValidationError("Invalid action. Use 'accept' or 'reject'.")
+
+        interest.save()
+        return Response({"message": "Interest updated successfully."}, status=status.HTTP_200_OK)
     
     

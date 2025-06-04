@@ -31,6 +31,21 @@ export const chatService = {
         return response.data;
     },
 
+    getSendedInterests: async () => {
+        const response = await api.get(API_ENDPOINTS.chat.sendedInterests);
+        return response.data;
+    },
+
+    getReceivedInterests: async () => {
+        const response = await api.get(API_ENDPOINTS.chat.receivedInterests);
+        return response.data;
+    },
+
+    handleInterestAction: async (interestId, action) => {
+        const response = await api.post(API_ENDPOINTS.chat.InterestAction, {interest_id: interestId, action: action});
+        return response.data;
+    },
+
     getActiveChats: async () => {
         const response = await api.get(API_ENDPOINTS.chat.activeChats);
         return response.data;

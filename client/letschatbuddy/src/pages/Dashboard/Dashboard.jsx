@@ -6,7 +6,8 @@ import Header from '../../components/layout/Header';
 import Navigation from '../../components/layout/Navigation';
 import ChatPage from '../../components/chat/ChatPage';
 import UserDiscoveryPage from '../../components/discovery/UserDiscoveryPage';
-import InterestManagerPage from '../../components/Interests/InterestManagerPage';
+import InterestManagerPage from '../../components/interests/InterestManagerPage';
+import RequestManagerPage from '../../components/requests/RequestManagerPage';
 import { mockUsers } from '../../data/mockData';
 import { avatars } from '../../services/avatars'; 
 
@@ -25,26 +26,17 @@ const Dashboard = () => {
     else if (path === 'interests') setActiveTab('interests')
     else setActiveTab('discover')
     
-    // Simulate received interests
-    setReceivedInterests([
-      {
-        id: 1,
-        from: mockUsers[0],
-        timestamp: '2 hours ago'
-      },
-      {
-        id: 2,
-        from: mockUsers[1],
-        timestamp: '1 day ago'
-      }
-    ])
-    
     // Load any persisted data from localStorage
     const storedSentInterests = localStorage.getItem('sentInterests')
+    const storedReceivedInterests = localStorage.getItem('receivedInterests');
     const storedActiveChats = localStorage.getItem('activeChats')
     
     if (storedSentInterests) {
       setSentInterests(JSON.parse(storedSentInterests))
+    }
+
+    if (storedReceivedInterests) {
+      setReceivedInterests(JSON.parse(storedReceivedInterests));
     }
     
     if (storedActiveChats) {
@@ -52,16 +44,11 @@ const Dashboard = () => {
     }
   }, [navigate])
   
-  // Persist data to localStorage when it changes
   useEffect(() => {
-    if (sentInterests.length > 0) {
-      localStorage.setItem('sentInterests', JSON.stringify(sentInterests))
-    }
-    
-    if (activeChats.length > 0) {
-      localStorage.setItem('activeChats', JSON.stringify(activeChats))
-    }
-  }, [sentInterests, activeChats])
+    localStorage.setItem('sentInterests', JSON.stringify(sentInterests));
+    localStorage.setItem('receivedInterests', JSON.stringify(receivedInterests));
+    localStorage.setItem('activeChats', JSON.stringify(activeChats));
+  }, [sentInterests, receivedInterests, activeChats]);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab)
@@ -70,16 +57,17 @@ const Dashboard = () => {
 
 
   const handleAcceptInterest = (interestId) => {
-    const interest = receivedInterests.find(i => i.id === interestId)
-    setActiveChats(prev => {
-      // Check if chat already exists
-      if (!prev.find(chat => chat.id === interest.from.id)) {
-        return [...prev, interest.from]
-      }
-      return prev
-    })
-    setReceivedInterests(receivedInterests.filter(i => i.id !== interestId))
-  }
+    const interest = receivedInterests.find(i => i.id === interestId);
+    if (interest) {
+      setActiveChats(prev => {
+        if (!prev.find(chat => chat.id === interest.sender.id)) {
+          return [...prev, interest.sender];
+        }
+        return prev;
+      });
+    }
+    setReceivedInterests(receivedInterests.filter(i => i.id !== interestId));
+  };
 
   const handleRejectInterest = (interestId) => {
     setReceivedInterests(receivedInterests.filter(i => i.id !== interestId))
@@ -121,6 +109,18 @@ const Dashboard = () => {
             <Route 
               path="/interests" 
               element={
+                <RequestManagerPage
+                  currentUser={currentUser}
+                  receivedInterests={receivedInterests}
+                  onAcceptInterest={handleAcceptInterest}
+                  onRejectInterest={handleRejectInterest}
+                />
+              } 
+            />
+
+            <Route 
+              path="/requests" 
+              element={
                 <InterestManagerPage
                   currentUser={currentUser}
                   receivedInterests={receivedInterests}
@@ -129,6 +129,7 @@ const Dashboard = () => {
                 />
               } 
             />
+
             <Route 
               path="/chats/*" 
               element={

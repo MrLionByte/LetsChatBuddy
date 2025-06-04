@@ -1,5 +1,6 @@
 import { createContext, useState, useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import {clearSuggestedFriends} from '../utils/storage';
 
 const AuthContext = createContext()
 
@@ -21,9 +22,13 @@ export const AuthProvider = ({ children }) => {
           setCurrentUser(JSON.parse(storedUser))
         } else {
           localStorage.removeItem('connectChatUser')
+          localStorage.removeItem('token')
+          clearSuggestedFriends();
         }
       } catch {
         localStorage.removeItem('connectChatUser')
+        localStorage.removeItem('token')
+        clearSuggestedFriends();
       }
     }
     setLoading(false)
@@ -38,6 +43,8 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     setCurrentUser(null)
     localStorage.removeItem('connectChatUser')
+    localStorage.removeItem('token')
+    clearSuggestedFriends();
     navigate('/')
   }
 

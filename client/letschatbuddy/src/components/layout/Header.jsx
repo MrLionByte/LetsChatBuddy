@@ -25,9 +25,9 @@ const Header = ({ currentUser }) => {
             className="flex items-center space-x-3 bg-dark-600/50 hover:bg-dark-600 rounded-xl px-3 py-2 transition-colors border border-dark-400/50"
           >
             <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
-              <span className="text-white">{currentUser?.avatar || '👤'}</span>
+              <span className="text-white">{currentUser?.avatar || '/default/a7.png'}</span>
             </div>
-            <span className="text-white hidden sm:inline-block">{currentUser?.name || 'User'}</span>
+            <span className="text-white hidden sm:inline-block">{currentUser?.username || 'User'}</span>
             <span className="w-2 h-2 border-r-2 border-b-2 border-white/70 transform rotate-45 mt-[-3px]"></span>
           </button>
           
@@ -41,7 +41,7 @@ const Header = ({ currentUser }) => {
                 className="absolute right-0 mt-2 w-48 bg-dark-600/95 backdrop-blur-md rounded-xl shadow-lg py-2 border border-dark-400/50 z-50"
               >
                 <div className="px-4 py-2 border-b border-dark-400/50">
-                  <p className="text-white font-medium">{currentUser?.name}</p>
+                  <p className="text-white font-medium">{currentUser?.username}</p>
                   <p className="text-white/60 text-sm truncate">{currentUser?.email || 'user@example.com'}</p>
                 </div>
                 
