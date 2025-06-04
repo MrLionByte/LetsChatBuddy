@@ -13,11 +13,12 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
 
     const storedUser = localStorage.getItem('connectChatUser')
-    if (storedUser) {
+    const token = localStorage.getItem('token')
+
+    if (token && storedUser) {
       try {
-        const user = JSON.parse(storedUser)
-        if (user?.accessToken) {
-          setCurrentUser(user)
+        if (token) {
+          setCurrentUser(JSON.parse(storedUser))
         } else {
           localStorage.removeItem('connectChatUser')
         }

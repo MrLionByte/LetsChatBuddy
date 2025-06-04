@@ -25,7 +25,7 @@ class Interest(models.Model):
         unique_together = ('sender', 'receiver')
         
     def __str__(self):
-        return f"{self.sender.username} -> {self.receiver.username} ({self.status})"
+        return f"{self.sender.username} {self.sender.id} -> {self.receiver.username} ({self.status})"
     
 
 class ChatRoom(models.Model):

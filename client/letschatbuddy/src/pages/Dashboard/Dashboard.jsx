@@ -12,7 +12,7 @@ import { avatars } from '../../services/avatars';
 
 
 const Dashboard = () => {
-  const { currentUser, isAuthenticated } = useAuth();
+  const { currentUser } = useAuth();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('discover');
   const [sentInterests, setSentInterests] = useState([]);
@@ -20,12 +20,6 @@ const Dashboard = () => {
   const [activeChats, setActiveChats] = useState([]);
   
   useEffect(() => {
-    if (!isAuthenticated) {
-      navigate('/auth')
-      return
-    }
-    
-    // Set the active tab based on the URL
     const path = window.location.pathname.split('/').pop()
     if (path === 'chats') setActiveTab('chats')
     else if (path === 'interests') setActiveTab('interests')
@@ -56,7 +50,7 @@ const Dashboard = () => {
     if (storedActiveChats) {
       setActiveChats(JSON.parse(storedActiveChats))
     }
-  }, [isAuthenticated, navigate])
+  }, [navigate])
   
   // Persist data to localStorage when it changes
   useEffect(() => {
@@ -74,9 +68,6 @@ const Dashboard = () => {
     navigate(`/app/${tab}`)
   }
 
-  const handleSendInterest = (user) => {
-    setSentInterests([...sentInterests, user.id])
-  }
 
   const handleAcceptInterest = (interestId) => {
     const interest = receivedInterests.find(i => i.id === interestId)
@@ -92,10 +83,6 @@ const Dashboard = () => {
 
   const handleRejectInterest = (interestId) => {
     setReceivedInterests(receivedInterests.filter(i => i.id !== interestId))
-  }
-
-  if (!isAuthenticated) {
-    return <Navigate to="/auth" replace />
   }
 
   return (
@@ -126,11 +113,11 @@ const Dashboard = () => {
               element={
                 <UserDiscoveryPage
                   currentUser={currentUser}
-                  onSendInterest={handleSendInterest}
                   sentInterests={sentInterests}
                 />
               } 
             />
+
             <Route 
               path="/interests" 
               element={

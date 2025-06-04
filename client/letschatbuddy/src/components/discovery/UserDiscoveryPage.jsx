@@ -1,15 +1,22 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import { Search } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { mockUsers } from '../../data/mockData'
+import {useUserDiscovery} from './_lib';
 
-const UserDiscoveryPage = ({ currentUser, onSendInterest, sentInterests }) => {
-  const [searchTerm, setSearchTerm] = useState('')
+const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
+  const {
+    searchTerm,
+    setSearchTerm,
+    suggestedUsers,
+    loading,  
+    handleSendInterest,
+  } = useUserDiscovery(currentUser, sentInterests, onSendInterest);
   
-  const filteredUsers = mockUsers.filter(user => 
-    user.id !== currentUser.id && 
-    user.name.toLowerCase().includes(searchTerm.toLowerCase())
-  )
+  const filteredUsers = suggestedUsers.filter(
+    user => user.id !== currentUser.id &&
+    user.username?.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="space-y-6">
@@ -35,7 +42,8 @@ const UserDiscoveryPage = ({ currentUser, onSendInterest, sentInterests }) => {
               key={user.id}
               user={user}
               index={index}
-              onSendInterest={onSendInterest}
+              isLoading={loading}
+              onSendInterest={() => handleSendInterest(user)}
               isInterestSent={sentInterests.includes(user.id)}
             />
           ))
@@ -65,7 +73,11 @@ const UserCard = ({ user, index, onSendInterest, isInterestSent }) => {
         <div className="flex items-center space-x-4">
           <div className="relative">
             <div className="w-12 h-12 bg-dark-800/80 rounded-full flex items-center justify-center text-xl">
-              {user.avatar}
+                {user.avatar ? (
+                  <img src={user.avatar} className="w-10 h-10 rounded-full" alt={`${user.name}'s avatar`} />
+                ) : (
+                  <span>{user.name?.slice(0, 2).toUpperCase()}</span>
+                )}
             </div>
             <div className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-dark-500 ${
               user.status === 'online' ? 'bg-green-500' : 
@@ -74,8 +86,7 @@ const UserCard = ({ user, index, onSendInterest, isInterestSent }) => {
             }`} />
           </div>
           <div>
-            <h3 className="text-white font-semibold text-lg">{user.name}</h3>
-            <p className="text-white/60 text-sm">{user.bio}</p>
+            <h3 className="text-white font-semibold text-lg overflow-hidden">{user.username}</h3>
             <div className="flex items-center mt-1">
               <span className={`text-xs px-2 py-1 rounded-full ${
                 user.status === 'online' ? 'bg-green-500/20 text-green-400' : 

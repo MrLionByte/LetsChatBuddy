@@ -42,18 +42,16 @@ class SuggestedFriendsAPIView(NonSuperuserQuerysetMixin,generics.ListAPIView):
 
         exclude_ids = [int(id) for id in exclude_ids.split(',') if id.isdigit()] if exclude_ids else []
         exclude_ids.append(user.id)
-        exclude_ids.append(user.id)
         
         interests_queryset = Interest.objects.filter(
             Q(sender=user) | Q(receiver=user)
         ).values_list('receiver_id', 'sender_id')
         
-        connected_users_ids = set()
+        connected_ids = set()
         for sender_id, receiver_id in interests_queryset:
-            connected_users_ids.add(sender_id)
-            connected_users_ids.add(receiver_id)
+            connected_ids.update([sender_id, receiver_id])
         
-        exclude_ids += list(connected_users_ids)
+        exclude_ids += list(connected_ids)
         
         queryset = CustomUser.objects.filter(
             is_superuser=False).exclude(
@@ -67,3 +65,25 @@ class SuggestedFriendsAPIView(NonSuperuserQuerysetMixin,generics.ListAPIView):
         
         return queryset.order_by('?')[:30]
                     
+                    
+class SendInterestRequestAPIView(generics.CreateAPIView):
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = UserSuggestionSerializer
+
+    def post(self, request, *args, **kwargs):
+        user = request.user
+        receiver_id = request.data.get('receiver_id')
+        print(f"Receiver ID: {receiver_id}")
+        if not receiver_id:
+            raise ValidationError("Receiver ID is required.")
+        
+        try:
+            receiver = CustomUser.objects.get(id=receiver_id, is_superuser=False)
+        except CustomUser.DoesNotExist:
+            raise ValidationError("Receiver does not exist or is a superuser.")
+        
+        Interest.objects.get_or_create(sender=user, receiver=receiver)
+        
+        return Response({"message": "Interest request sent successfully."}, status=status.HTTP_201_CREATED)
+    
+    

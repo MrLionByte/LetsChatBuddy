@@ -4938,3 +4938,1919 @@ INFO 2025-06-02 06:32:19,426 runserver [mHTTP POST /api/v1/accounts/signup/ 201
 INFO 2025-06-02 06:32:40,428 views User signed up successfully catyjimyzi
 INFO 2025-06-02 06:32:40,430 runserver [mHTTP POST /api/v1/accounts/signup/ 201 [4.38, 127.0.0.1:45068][0m
 INFO 2025-06-02 06:32:57,588 runserver [mHTTP GET /api/v1/chat/suggested-friends/ 200 [3.64, 127.0.0.1:51772][0m
+INFO 2025-06-04 06:04:48,928 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 06:04:52,363 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 06:04:52,363 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 06:04:52,365 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 06:10:01,941 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:48658][0m
+INFO 2025-06-04 06:10:12,843 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:10:13,761 runserver [mHTTP POST /api/v1/accounts/login/ 200 [11.81, 127.0.0.1:48674][0m
+INFO 2025-06-04 06:10:13,930 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [0.01, 127.0.0.1:48658][0m
+INFO 2025-06-04 06:10:13,933 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [0.01, 127.0.0.1:54526][0m
+WARNING 2025-06-04 06:10:13,956 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-04 06:10:13,958 runserver [31;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 401 [0.02, 127.0.0.1:48674][0m
+INFO 2025-06-04 06:10:13,979 runserver [mHTTP OPTIONS /api/v1/accounts/token/refresh/ 200 [0.01, 127.0.0.1:54526][0m
+WARNING 2025-06-04 06:10:13,983 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-04 06:10:13,987 runserver [31;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 401 [0.02, 127.0.0.1:54540][0m
+WARNING 2025-06-04 06:10:14,019 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-04 06:10:14,020 runserver [31;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 401 [0.03, 127.0.0.1:54546][0m
+INFO 2025-06-04 06:10:16,435 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.40, 127.0.0.1:54546][0m
+INFO 2025-06-04 06:10:16,438 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.44, 127.0.0.1:54540][0m
+INFO 2025-06-04 06:10:16,444 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.46, 127.0.0.1:48674][0m
+INFO 2025-06-04 06:10:19,601 runserver [mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [3.15, 127.0.0.1:54540][0m
+INFO 2025-06-04 06:10:22,676 runserver [mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [3.07, 127.0.0.1:54540][0m
+INFO 2025-06-04 06:10:25,744 runserver [mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [3.06, 127.0.0.1:54540][0m
+WARNING 2025-06-04 06:11:32,348 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-06-04 06:11:32,350 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [0.01, 127.0.0.1:52984][0m
+WARNING 2025-06-04 06:11:42,965 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-06-04 06:11:42,967 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [0.02, 127.0.0.1:52984][0m
+INFO 2025-06-04 06:12:08,961 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:12:09,804 runserver [mHTTP POST /api/v1/accounts/login/ 200 [5.61, 127.0.0.1:52984][0m
+INFO 2025-06-04 06:21:47,425 runserver [mHTTP GET /engine-room/ 200 [2.79, 127.0.0.1:36130][0m
+INFO 2025-06-04 06:21:47,524 runserver [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:36130][0m
+INFO 2025-06-04 06:21:47,537 runserver [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:49008][0m
+INFO 2025-06-04 06:21:47,539 runserver [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:36132][0m
+INFO 2025-06-04 06:21:47,540 runserver [36mHTTP GET /static/admin/js/theme.js 304 [0.02, 127.0.0.1:49010][0m
+INFO 2025-06-04 06:21:47,542 runserver [36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:49032][0m
+INFO 2025-06-04 06:21:47,544 runserver [36mHTTP GET /static/admin/css/dashboard.css 304 [0.02, 127.0.0.1:49018][0m
+INFO 2025-06-04 06:21:47,597 runserver [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:49018][0m
+INFO 2025-06-04 06:21:47,645 runserver [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:49018][0m
+INFO 2025-06-04 06:21:47,648 runserver [36mHTTP GET /static/admin/img/icon-changelink.svg 304 [0.01, 127.0.0.1:49032][0m
+INFO 2025-06-04 06:21:54,128 runserver [mHTTP GET /engine-room/accounts/customuser/ 200 [3.57, 127.0.0.1:49018][0m
+INFO 2025-06-04 06:21:54,209 runserver [36mHTTP GET /static/admin/css/changelists.css 304 [0.02, 127.0.0.1:49018][0m
+INFO 2025-06-04 06:21:54,219 runserver [36mHTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:49008][0m
+INFO 2025-06-04 06:21:54,221 runserver [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:36132][0m
+INFO 2025-06-04 06:21:54,225 runserver [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:49048][0m
+INFO 2025-06-04 06:21:54,227 runserver [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:36130][0m
+INFO 2025-06-04 06:21:54,239 runserver [36mHTTP GET /static/admin/js/actions.js 304 [0.03, 127.0.0.1:49018][0m
+INFO 2025-06-04 06:21:54,252 runserver [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:49008][0m
+INFO 2025-06-04 06:21:54,254 runserver [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:49048][0m
+INFO 2025-06-04 06:21:54,256 runserver [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.03, 127.0.0.1:36132][0m
+INFO 2025-06-04 06:21:54,282 runserver [36mHTTP GET /static/admin/js/filters.js 304 [0.00, 127.0.0.1:36132][0m
+INFO 2025-06-04 06:21:56,745 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.55, 127.0.0.1:49010][0m
+INFO 2025-06-04 06:21:56,822 runserver [36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.00, 127.0.0.1:49010][0m
+WARNING 2025-06-04 06:21:57,491 log Not Found: /favicon.ico
+WARNING 2025-06-04 06:21:57,493 runserver [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:49010][0m
+INFO 2025-06-04 06:23:03,357 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:49218][0m
+WARNING 2025-06-04 06:23:03,378 log Bad Request: /api/v1/accounts/login/
+WARNING 2025-06-04 06:23:03,380 runserver [31;1mHTTP POST /api/v1/accounts/login/ 400 [0.02, 127.0.0.1:49226][0m
+INFO 2025-06-04 06:23:19,278 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:49218][0m
+INFO 2025-06-04 06:23:23,987 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:23:24,806 runserver [mHTTP POST /api/v1/accounts/login/ 200 [5.52, 127.0.0.1:49226][0m
+INFO 2025-06-04 06:24:20,266 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:60144][0m
+INFO 2025-06-04 06:24:25,426 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:24:26,133 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:60144][0m
+INFO 2025-06-04 06:24:26,206 runserver [mHTTP POST /api/v1/accounts/login/ 200 [5.93, 127.0.0.1:49226][0m
+INFO 2025-06-04 06:24:31,389 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:24:32,288 runserver [mHTTP POST /api/v1/accounts/login/ 200 [6.15, 127.0.0.1:56820][0m
+INFO 2025-06-04 06:29:48,786 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:33868][0m
+INFO 2025-06-04 06:29:53,723 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:29:54,462 runserver [mHTTP POST /api/v1/accounts/login/ 200 [5.67, 127.0.0.1:33880][0m
+INFO 2025-06-04 06:31:29,553 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:33844][0m
+INFO 2025-06-04 06:31:33,972 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:31:34,895 runserver [mHTTP POST /api/v1/accounts/login/ 200 [5.34, 127.0.0.1:33856][0m
+INFO 2025-06-04 06:34:07,846 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.01, 127.0.0.1:57512][0m
+INFO 2025-06-04 06:34:12,725 views User logged-in successfully sampleUser
+INFO 2025-06-04 06:34:13,615 runserver [mHTTP POST /api/v1/accounts/login/ 200 [5.76, 127.0.0.1:57528][0m
+INFO 2025-06-04 07:04:29,192 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:30,885 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:32,571 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:33,596 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:35,093 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:36,109 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:38,421 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:39,768 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:41,277 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:42,701 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:47,125 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:48,760 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:50,165 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:51,021 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:53,726 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:04:53,727 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:04:53,728 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:04:54,660 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:04:55,888 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:04:58,396 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:04:58,397 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:04:58,398 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:05:39,421 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:05:40,286 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:05:42,554 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:05:43,509 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:05:46,818 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:05:48,089 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:05:52,416 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:05:53,288 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:05:55,740 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:05:55,740 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:05:55,742 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:05:58,192 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:05:59,156 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:00,507 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:06:01,793 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:03,224 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:06:04,277 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:05,661 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:06:06,508 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:08,968 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:06:08,968 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:06:08,969 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:06:11,255 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:06:12,004 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:13,346 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:06:14,740 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:17,269 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:06:18,608 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:21,318 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:06:21,318 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:06:21,319 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:06:23,098 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:06:24,027 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:06:26,661 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:06:26,661 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:06:26,662 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:08:45,463 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:08:46,622 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:08:49,071 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:08:50,158 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:08:52,674 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:08:52,674 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:08:52,675 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:08:55,680 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:08:56,972 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:09:00,562 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:09:00,563 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:09:00,564 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:14:59,596 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:15:00,858 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:15:04,544 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:15:04,544 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:15:04,545 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:15:44,505 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 07:15:45,573 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:15:48,409 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:15:48,409 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:15:48,410 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:15:57,574 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.01, 127.0.0.1:33578][0m
+WARNING 2025-06-04 07:15:57,604 log Unauthorized: /api/v1/chat/interests/
+WARNING 2025-06-04 07:15:57,606 runserver [31;1mHTTP POST /api/v1/chat/interests/ 401 [0.03, 127.0.0.1:33592][0m
+INFO 2025-06-04 07:15:57,621 runserver [mHTTP OPTIONS /api/v1/accounts/token/refresh/ 200 [0.01, 127.0.0.1:33578][0m
+INFO 2025-06-04 07:15:59,970 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.34, 127.0.0.1:33592][0m
+INFO 2025-06-04 07:15:59,985 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.01, 127.0.0.1:33578][0m
+WARNING 2025-06-04 07:16:02,325 log Bad Request: /api/v1/chat/interests/
+WARNING 2025-06-04 07:16:02,327 runserver [31;1mHTTP POST /api/v1/chat/interests/ 400 [2.34, 127.0.0.1:33592][0m
+INFO 2025-06-04 07:18:01,768 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.01, 127.0.0.1:54794][0m
+INFO 2025-06-04 07:18:05,618 runserver [mHTTP POST /api/v1/chat/interests/ 201 [3.84, 127.0.0.1:54810][0m
+INFO 2025-06-04 07:18:46,608 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.01, 127.0.0.1:50112][0m
+INFO 2025-06-04 07:18:49,544 runserver [mHTTP POST /api/v1/chat/interests/ 201 [2.93, 127.0.0.1:50116][0m
+INFO 2025-06-04 07:19:48,177 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.01, 127.0.0.1:50998][0m
+INFO 2025-06-04 07:19:52,214 runserver [mHTTP POST /api/v1/chat/interests/ 201 [4.03, 127.0.0.1:50116][0m
+INFO 2025-06-04 07:26:18,376 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.00, 127.0.0.1:51148][0m
+INFO 2025-06-04 07:26:21,848 runserver [mHTTP POST /api/v1/chat/interests/ 201 [3.45, 127.0.0.1:51156][0m
+INFO 2025-06-04 07:27:01,050 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.01, 127.0.0.1:51148][0m
+INFO 2025-06-04 07:27:04,140 runserver [mHTTP POST /api/v1/chat/interests/ 201 [3.08, 127.0.0.1:51156][0m
+INFO 2025-06-04 07:27:12,845 runserver [mHTTP OPTIONS /api/v1/chat/interests/ 200 [0.01, 127.0.0.1:51148][0m
+INFO 2025-06-04 07:27:17,146 runserver [mHTTP POST /api/v1/chat/interests/ 201 [4.29, 127.0.0.1:51156][0m
+INFO 2025-06-04 07:28:16,127 runserver [mHTTP GET /engine-room/ 200 [3.16, 127.0.0.1:39938][0m
+INFO 2025-06-04 07:28:30,349 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:28:31,624 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:28:33,978 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:28:35,204 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:28:36,489 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:28:37,800 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:28:39,023 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:28:40,424 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:28:41,704 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:28:42,857 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:28:58,294 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:28:59,746 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:04,121 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:05,349 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:12,720 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:13,957 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:15,214 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:15,949 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:18,215 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:19,051 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:22,404 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:23,413 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:25,648 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:26,783 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:28,022 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:29,134 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:30,403 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:31,449 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:33,763 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:35,287 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:36,534 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:37,571 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:38,836 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:39,902 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:41,319 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:42,413 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:29:45,141 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:29:45,141 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:29:45,143 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:29:48,048 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/admin.py changed, reloading.
+INFO 2025-06-04 07:29:49,586 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:30:11,417 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:30:14,414 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:30:14,415 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:30:14,416 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:30:18,815 runserver [mHTTP GET /engine-room/ 200 [3.28, 127.0.0.1:56518][0m
+INFO 2025-06-04 07:30:29,147 runserver [mHTTP GET /engine-room/chat/interest/ 200 [5.91, 127.0.0.1:56518][0m
+INFO 2025-06-04 07:30:31,974 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.76, 127.0.0.1:56518][0m
+INFO 2025-06-04 07:30:58,391 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:30:59,645 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:31:00,958 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:31:01,765 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:31:04,604 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:31:04,604 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:31:04,605 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:31:15,530 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:31:16,623 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:31:18,034 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:31:19,076 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:31:22,434 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:31:22,435 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:31:22,436 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:36:51,870 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.01, 127.0.0.1:45230][0m
+INFO 2025-06-04 07:36:51,872 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.02, 127.0.0.1:45236][0m
+INFO 2025-06-04 07:36:51,986 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [0.01, 127.0.0.1:45236][0m
+ERROR 2025-06-04 07:36:55,295 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:36:55,328 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:36:55,342 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:36:55,369 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 500 [3.48, 127.0.0.1:45252][0m
+ERROR 2025-06-04 07:36:55,380 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 500 [3.39, 127.0.0.1:45256][0m
+ERROR 2025-06-04 07:36:55,388 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 500 [3.50, 127.0.0.1:45248][0m
+INFO 2025-06-04 07:36:55,451 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [0.01, 127.0.0.1:45236][0m
+ERROR 2025-06-04 07:36:58,396 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:36:58,404 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 500 [2.95, 127.0.0.1:45248][0m
+INFO 2025-06-04 07:37:36,857 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:37:38,104 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:37:39,612 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:37:40,702 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:37:43,543 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:37:43,543 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:37:43,544 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:37:47,053 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.02, 127.0.0.1:55608][0m
+INFO 2025-06-04 07:37:47,057 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.02, 127.0.0.1:55618][0m
+INFO 2025-06-04 07:37:47,162 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [0.01, 127.0.0.1:55618][0m
+ERROR 2025-06-04 07:37:49,873 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:37:49,882 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:37:49,890 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:37:49,911 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 500 [2.74, 127.0.0.1:55654][0m
+ERROR 2025-06-04 07:37:49,919 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 500 [2.85, 127.0.0.1:55626][0m
+ERROR 2025-06-04 07:37:49,923 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 500 [2.85, 127.0.0.1:55638][0m
+INFO 2025-06-04 07:37:49,982 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [0.01, 127.0.0.1:55618][0m
+ERROR 2025-06-04 07:37:52,663 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 52, in get_queryset
+    connected_ids.update(sender_id, receiver_id)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2025-06-04 07:37:52,669 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 500 [2.68, 127.0.0.1:55638][0m
+INFO 2025-06-04 07:40:45,297 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:40:46,698 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:40:48,065 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 07:40:49,588 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 07:40:52,242 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 07:40:52,242 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 07:40:52,245 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 07:40:53,681 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.03, 127.0.0.1:44354][0m
+INFO 2025-06-04 07:40:53,689 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.03, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:40:53,788 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [0.02, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:40:56,670 runserver [mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids=7%2C 200 [2.87, 127.0.0.1:44382][0m
+INFO 2025-06-04 07:40:56,672 runserver [mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 200 [2.97, 127.0.0.1:44380][0m
+INFO 2025-06-04 07:40:56,676 runserver [mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 200 [2.98, 127.0.0.1:44370][0m
+INFO 2025-06-04 07:41:32,837 runserver [mHTTP OPTIONS /api/v1/accounts/signup/ 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:41:36,795 views User signed up successfully lecaby
+INFO 2025-06-04 07:41:36,799 runserver [mHTTP POST /api/v1/accounts/signup/ 201 [3.96, 127.0.0.1:44370][0m
+INFO 2025-06-04 07:41:52,363 views User signed up successfully tyfuhoc
+INFO 2025-06-04 07:41:52,367 runserver [mHTTP POST /api/v1/accounts/signup/ 201 [4.25, 127.0.0.1:44370][0m
+INFO 2025-06-04 07:42:05,608 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=b&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:06,865 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=bo&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:07,336 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=bob&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:08,440 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=b&exclude_ids=7%2C 200 [2.83, 127.0.0.1:44370][0m
+INFO 2025-06-04 07:42:09,669 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=bo&exclude_ids=7%2C 200 [2.80, 127.0.0.1:53878][0m
+INFO 2025-06-04 07:42:10,283 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=bob&exclude_ids=7%2C 200 [2.94, 127.0.0.1:53888][0m
+INFO 2025-06-04 07:42:37,802 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=bo&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:38,209 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=b&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:40,902 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=bo&exclude_ids=7%2C 200 [3.09, 127.0.0.1:53888][0m
+INFO 2025-06-04 07:42:41,207 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=b&exclude_ids=7%2C 200 [2.99, 127.0.0.1:53878][0m
+INFO 2025-06-04 07:42:49,801 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=x&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:52,781 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=x&exclude_ids=7%2C 200 [2.97, 127.0.0.1:53878][0m
+INFO 2025-06-04 07:42:54,193 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=a&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:55,608 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=w&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:42:57,416 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=a&exclude_ids=7%2C 200 [3.22, 127.0.0.1:53878][0m
+INFO 2025-06-04 07:42:58,615 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=w&exclude_ids=7%2C 200 [3.00, 127.0.0.1:53888][0m
+INFO 2025-06-04 07:43:04,848 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=c&exclude_ids=7%2C 200 [0.01, 127.0.0.1:44360][0m
+INFO 2025-06-04 07:43:07,954 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=c&exclude_ids=7%2C 200 [3.10, 127.0.0.1:53888][0m
+INFO 2025-06-04 07:49:40,932 runserver [mHTTP GET /engine-room/chat/interest/ 200 [5.42, 127.0.0.1:53658][0m
+INFO 2025-06-04 07:49:43,470 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.41, 127.0.0.1:53658][0m
+INFO 2025-06-04 09:22:04,925 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gabotu+%28pending%29&exclude_ids=7%2C 200 [0.00, 127.0.0.1:57506][0m
+WARNING 2025-06-04 09:22:04,931 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-04 09:22:04,932 runserver [31;1mHTTP GET /api/v1/chat/suggested-friends/?search=gabotu+%28pending%29&exclude_ids=7%2C 401 [0.00, 127.0.0.1:57516][0m
+INFO 2025-06-04 09:22:04,939 runserver [mHTTP OPTIONS /api/v1/accounts/token/refresh/ 200 [0.00, 127.0.0.1:57506][0m
+INFO 2025-06-04 09:22:07,284 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gabotu&exclude_ids=7%2C 200 [0.00, 127.0.0.1:57506][0m
+WARNING 2025-06-04 09:22:07,291 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-04 09:22:07,292 runserver [31;1mHTTP GET /api/v1/chat/suggested-friends/?search=gabotu&exclude_ids=7%2C 401 [0.00, 127.0.0.1:49090][0m
+INFO 2025-06-04 09:22:07,298 runserver [mHTTP OPTIONS /api/v1/accounts/token/refresh/ 200 [0.00, 127.0.0.1:57506][0m
+INFO 2025-06-04 09:22:07,603 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.66, 127.0.0.1:57516][0m
+INFO 2025-06-04 09:22:07,610 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gabotu+%28pending%29&exclude_ids=7%2C 200 [0.00, 127.0.0.1:57506][0m
+INFO 2025-06-04 09:22:09,535 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.23, 127.0.0.1:49090][0m
+INFO 2025-06-04 09:22:09,542 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gabotu&exclude_ids=7%2C 200 [0.00, 127.0.0.1:57506][0m
+INFO 2025-06-04 09:22:10,457 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=gabotu+%28pending%29&exclude_ids=7%2C 200 [2.84, 127.0.0.1:57516][0m
+INFO 2025-06-04 09:22:12,608 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=gabotu&exclude_ids=7%2C 200 [3.06, 127.0.0.1:49090][0m
+INFO 2025-06-04 09:26:31,998 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:26:32,769 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:26:35,052 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:26:35,672 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:26:36,884 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:26:37,545 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:26:39,803 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:26:40,375 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:26:41,564 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:26:42,155 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:26:44,491 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:26:44,491 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:26:44,492 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:27:42,863 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gab&exclude_ids=7%2C 200 [0.00, 127.0.0.1:55860][0m
+ERROR 2025-06-04 09:27:50,900 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `isInterestSent` is not valid for model `CustomUser` in `chat.serializers.UserSuggestionSerializer`.
+ERROR 2025-06-04 09:27:50,906 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=gab&exclude_ids=7%2C 500 [8.04, 127.0.0.1:55870][0m
+INFO 2025-06-04 09:27:51,663 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=ga&exclude_ids=7%2C 200 [0.00, 127.0.0.1:55860][0m
+INFO 2025-06-04 09:27:52,260 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:55860][0m
+ERROR 2025-06-04 09:27:54,446 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `isInterestSent` is not valid for model `CustomUser` in `chat.serializers.UserSuggestionSerializer`.
+ERROR 2025-06-04 09:27:54,452 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=ga&exclude_ids=7%2C 500 [2.79, 127.0.0.1:55870][0m
+ERROR 2025-06-04 09:27:55,265 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `isInterestSent` is not valid for model `CustomUser` in `chat.serializers.UserSuggestionSerializer`.
+ERROR 2025-06-04 09:27:55,270 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 500 [3.01, 127.0.0.1:46072][0m
+INFO 2025-06-04 09:28:56,436 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:28:57,021 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:28:59,555 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:28:59,555 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:28:59,555 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:29:00,325 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:00,913 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:02,117 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:02,693 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:05,292 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:29:05,292 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:29:05,292 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:29:07,006 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:07,584 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:08,802 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:09,445 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:10,577 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:11,240 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:13,392 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:14,108 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:15,320 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:15,901 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:18,317 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:29:18,317 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:29:18,317 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:29:28,363 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:28,966 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:30,177 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:30,857 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:32,013 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:32,650 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:33,793 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:34,365 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:36,964 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:29:36,965 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:29:36,965 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:29:40,723 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:29:41,301 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:29:43,790 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:29:43,790 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:29:43,791 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:29:54,487 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:44796][0m
+ERROR 2025-06-04 09:29:57,432 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `isInterestSent` is not valid for model `CustomUser` in `chat.serializers.UserSuggestionSerializer`.
+ERROR 2025-06-04 09:29:57,438 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 500 [2.95, 127.0.0.1:44806][0m
+INFO 2025-06-04 09:30:10,176 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:30:12,975 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:30:12,975 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:30:12,976 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:30:23,947 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=ga&exclude_ids=7%2C 200 [0.00, 127.0.0.1:46710][0m
+ERROR 2025-06-04 09:30:28,256 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `isInterestSent` is not valid for model `CustomUser` in `chat.serializers.UserSuggestionSerializer`.
+ERROR 2025-06-04 09:30:28,262 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=ga&exclude_ids=7%2C 500 [4.31, 127.0.0.1:46726][0m
+INFO 2025-06-04 09:32:02,138 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:32:02,767 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:32:03,995 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:32:04,672 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:32:07,361 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:32:07,361 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:32:07,362 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:32:08,017 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:32:08,621 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:32:11,171 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:32:11,171 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:32:11,172 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:32:25,113 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:32:25,684 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:32:28,552 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:32:28,553 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:32:28,553 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:32:34,079 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:32:34,714 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:32:37,384 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:32:37,384 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:32:37,385 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:32:55,325 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:58740][0m
+ERROR 2025-06-04 09:32:58,480 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py", line 24, in get_isInterestSent
+    return obj.interestsent_set.filter(sender=user).exists()
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUser' object has no attribute 'interestsent_set'. Did you mean: 'interests_sent'?
+ERROR 2025-06-04 09:32:58,486 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 500 [3.16, 127.0.0.1:58750][0m
+INFO 2025-06-04 09:33:25,854 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:33:26,449 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:33:29,077 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:33:29,077 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:33:29,077 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:33:32,075 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=go&exclude_ids=7%2C 200 [0.00, 127.0.0.1:39448][0m
+INFO 2025-06-04 09:33:34,900 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=go&exclude_ids=7%2C 200 [2.82, 127.0.0.1:39456][0m
+INFO 2025-06-04 09:33:40,535 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:39448][0m
+INFO 2025-06-04 09:33:44,424 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [3.89, 127.0.0.1:39456][0m
+INFO 2025-06-04 09:34:14,975 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:39448][0m
+INFO 2025-06-04 09:34:18,933 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [3.95, 127.0.0.1:39456][0m
+INFO 2025-06-04 09:34:52,698 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=sampleUser+-%3E+mireryp+&exclude_ids=7%2C 200 [0.00, 127.0.0.1:39448][0m
+INFO 2025-06-04 09:34:55,298 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=mireryp+&exclude_ids=7%2C 200 [0.00, 127.0.0.1:39448][0m
+INFO 2025-06-04 09:34:55,315 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=sampleUser+-%3E+mireryp+&exclude_ids=7%2C 200 [2.61, 127.0.0.1:39456][0m
+INFO 2025-06-04 09:34:57,782 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=mireryp&exclude_ids=7%2C 200 [0.00, 127.0.0.1:39448][0m
+INFO 2025-06-04 09:34:58,667 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=mireryp+&exclude_ids=7%2C 200 [3.37, 127.0.0.1:49652][0m
+INFO 2025-06-04 09:35:01,025 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=mireryp&exclude_ids=7%2C 200 [3.24, 127.0.0.1:39456][0m
+INFO 2025-06-04 09:35:47,924 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:35:48,644 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:35:56,989 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:35:57,633 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:01,832 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:02,435 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:03,676 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:04,343 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:05,490 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:06,196 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:08,434 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:09,028 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:12,254 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:12,830 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:18,013 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:18,661 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:19,916 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:20,540 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:23,260 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:36:23,260 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:36:23,260 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:36:24,862 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:25,424 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:27,568 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:28,194 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:29,413 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:30,097 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:31,325 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:31,972 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:33,246 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:33,988 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:36,366 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:36:36,366 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:36:36,367 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:36:37,338 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:37,992 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:40,469 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:36:40,469 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:36:40,470 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:36:47,407 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:48,027 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:50,255 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:50,914 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:53,179 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:36:53,741 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:36:56,335 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:36:56,335 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:36:56,335 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:37:11,264 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:37:11,918 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:37:14,461 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:37:14,461 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:37:14,461 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:37:27,408 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:37:27,987 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:37:30,533 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:37:30,533 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:37:30,534 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:38:37,318 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:38:37,896 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:38:40,778 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:38:40,778 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:38:40,778 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:39:06,567 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:39:07,279 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:39:09,554 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:39:09,554 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:39:09,555 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:39:17,681 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:39:18,414 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:39:20,770 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:39:20,770 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:39:20,771 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:39:21,776 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:39:22,412 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:39:24,948 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:39:24,949 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:39:24,949 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:39:39,975 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:39:40,729 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:39:43,164 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:39:43,164 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:39:43,164 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:40:20,559 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:40:21,167 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:40:22,405 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:40:23,068 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:40:24,282 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:40:24,860 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:40:27,685 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:40:27,685 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:40:27,686 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:40:31,200 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:40:31,842 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:40:33,132 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:40:33,719 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:40:36,595 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:40:36,596 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:40:36,596 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:40:45,153 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:40:45,804 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:40:48,269 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:40:48,270 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:40:48,270 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:40:50,131 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:40:50,694 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:40:53,389 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:40:53,389 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:40:53,390 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:41:04,923 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:45020][0m
+INFO 2025-06-04 09:41:08,844 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [3.92, 127.0.0.1:45034][0m
+INFO 2025-06-04 09:41:52,904 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:41:53,523 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:41:56,058 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:41:56,058 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:41:56,059 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:41:57,841 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:41:58,419 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:42:01,281 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:42:01,281 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:42:01,282 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:50:01,168 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:01,839 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:05,015 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:05,670 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:06,815 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:07,398 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:09,555 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:10,136 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:11,274 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:11,893 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:13,120 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:13,698 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:16,846 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:50:16,846 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:50:16,847 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:50:42,353 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:42,946 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:45,178 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:45,747 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:50:47,953 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:50:48,650 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:51:44,682 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:51:45,364 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:51:48,040 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:51:48,040 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:51:48,041 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:51:49,842 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=G&exclude_ids=7%2C 200 [0.00, 127.0.0.1:38016][0m
+ERROR 2025-06-04 09:51:52,863 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py", line 24, in get_isInterestSent
+    request_user = self.get('request').user
+                   ^^^^^^^^
+AttributeError: 'UserSuggestionSerializer' object has no attribute 'get'
+ERROR 2025-06-04 09:51:52,869 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=G&exclude_ids=7%2C 500 [3.02, 127.0.0.1:38024][0m
+INFO 2025-06-04 09:52:03,424 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=G&exclude_ids=7%2C 200 [0.00, 127.0.0.1:38016][0m
+ERROR 2025-06-04 09:52:06,377 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py", line 24, in get_isInterestSent
+    request_user = self.get('request').user
+                   ^^^^^^^^
+AttributeError: 'UserSuggestionSerializer' object has no attribute 'get'
+ERROR 2025-06-04 09:52:06,382 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=G&exclude_ids=7%2C 500 [2.96, 127.0.0.1:38024][0m
+INFO 2025-06-04 09:52:24,447 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:52:25,099 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:52:26,342 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:52:26,937 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:52:29,407 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:52:29,407 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:52:29,407 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:52:31,269 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 09:52:32,052 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 09:52:34,602 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 09:52:34,602 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 09:52:34,602 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 09:52:58,146 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:34716][0m
+INFO 2025-06-04 09:53:03,086 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [4.94, 127.0.0.1:34718][0m
+INFO 2025-06-04 10:17:59,328 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:18:03,558 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:18:03,558 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:18:03,559 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:18:04,391 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:43176][0m
+INFO 2025-06-04 10:18:08,886 views User logged-in successfully sampleUser
+INFO 2025-06-04 10:18:09,809 runserver [mHTTP POST /api/v1/accounts/login/ 200 [5.42, 127.0.0.1:43192][0m
+INFO 2025-06-04 10:18:15,961 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:43176][0m
+INFO 2025-06-04 10:18:20,870 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [4.91, 127.0.0.1:43192][0m
+INFO 2025-06-04 10:18:44,320 runserver [mHTTP GET /engine-room/chat/interest/ 200 [4.77, 127.0.0.1:46378][0m
+INFO 2025-06-04 10:18:46,982 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.55, 127.0.0.1:46378][0m
+INFO 2025-06-04 10:21:37,845 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:21:40,764 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:21:40,764 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:21:40,765 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:21:54,288 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:49220][0m
+INFO 2025-06-04 10:21:59,188 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [4.90, 127.0.0.1:49222][0m
+INFO 2025-06-04 10:23:19,883 runserver [mHTTP GET /engine-room/chat/interest/2/change/ 200 [6.22, 127.0.0.1:39552][0m
+INFO 2025-06-04 10:23:20,035 runserver [mHTTP GET /static/admin/css/forms.css 200 [0.03, 127.0.0.1:39552][0m
+INFO 2025-06-04 10:23:20,044 runserver [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.00, 127.0.0.1:35608][0m
+INFO 2025-06-04 10:23:20,059 runserver [mHTTP GET /static/admin/css/widgets.css 200 [0.00, 127.0.0.1:35608][0m
+INFO 2025-06-04 10:23:20,078 runserver [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.00, 127.0.0.1:35608][0m
+INFO 2025-06-04 10:23:20,085 runserver [mHTTP GET /static/admin/js/change_form.js 200 [0.00, 127.0.0.1:35608][0m
+INFO 2025-06-04 10:23:22,542 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.53, 127.0.0.1:39562][0m
+INFO 2025-06-04 10:23:34,831 runserver [mHTTP GET /engine-room/chat/interest/ 200 [4.88, 127.0.0.1:39562][0m
+INFO 2025-06-04 10:23:49,075 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/models.py changed, reloading.
+INFO 2025-06-04 10:23:49,742 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:23:50,990 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/models.py changed, reloading.
+INFO 2025-06-04 10:23:51,680 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:23:52,849 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/models.py changed, reloading.
+INFO 2025-06-04 10:23:53,513 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:23:56,342 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:23:56,342 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:23:56,343 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:24:19,199 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:19,857 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:21,022 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:21,576 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:23,751 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:24,345 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:25,507 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:26,124 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:28,627 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:24:28,627 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:24:28,628 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:24:29,456 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:30,145 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:31,401 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:32,134 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:33,357 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:33,999 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:35,257 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/accounts/models.py changed, reloading.
+INFO 2025-06-04 10:24:35,865 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:24:39,862 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:24:39,863 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:24:39,863 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:24:45,590 runserver [mHTTP GET /engine-room/chat/interest/ 200 [5.46, 127.0.0.1:52992][0m
+INFO 2025-06-04 10:24:48,354 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.74, 127.0.0.1:52992][0m
+INFO 2025-06-04 10:24:56,237 runserver [mHTTP GET /engine-room/ 200 [2.89, 127.0.0.1:52992][0m
+INFO 2025-06-04 10:25:04,258 runserver [mHTTP GET /engine-room/accounts/customuser/ 200 [3.43, 127.0.0.1:52992][0m
+INFO 2025-06-04 10:25:06,889 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.60, 127.0.0.1:52992][0m
+INFO 2025-06-04 10:26:46,237 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:26:46,901 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:26:49,147 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:26:49,849 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:26:52,471 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:26:52,471 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:26:52,472 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:26:56,253 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:26:56,899 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:26:58,128 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:26:58,797 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:27:01,408 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:27:01,408 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:27:01,409 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:27:14,545 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:47696][0m
+WARNING 2025-06-04 10:27:14,554 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-04 10:27:14,554 runserver [31;1mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 401 [0.01, 127.0.0.1:47704][0m
+INFO 2025-06-04 10:27:14,562 runserver [mHTTP OPTIONS /api/v1/accounts/token/refresh/ 200 [0.00, 127.0.0.1:47696][0m
+INFO 2025-06-04 10:27:17,039 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.47, 127.0.0.1:47704][0m
+INFO 2025-06-04 10:27:17,048 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:47696][0m
+ERROR 2025-06-04 10:27:20,261 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py", line 24, in get_isInterestSent
+    request_user = self.request.user
+                   ^^^^^^^^^^^^
+AttributeError: 'UserSuggestionSerializer' object has no attribute 'request'
+ERROR 2025-06-04 10:27:20,269 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 500 [3.22, 127.0.0.1:47704][0m
+INFO 2025-06-04 10:27:32,311 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 200 [0.00, 127.0.0.1:47696][0m
+ERROR 2025-06-04 10:27:36,821 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py", line 24, in get_isInterestSent
+    request_user = self.request.user
+                   ^^^^^^^^^^^^
+AttributeError: 'UserSuggestionSerializer' object has no attribute 'request'
+ERROR 2025-06-04 10:27:36,825 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids=7%2C 500 [4.51, 127.0.0.1:47704][0m
+INFO 2025-06-04 10:29:51,639 runserver [mHTTP OPTIONS /api/v1/accounts/login/ 200 [0.00, 127.0.0.1:60680][0m
+INFO 2025-06-04 10:29:56,782 views User logged-in successfully sampleUser
+INFO 2025-06-04 10:29:57,703 runserver [mHTTP POST /api/v1/accounts/login/ 200 [6.06, 127.0.0.1:60682][0m
+WARNING 2025-06-04 10:29:58,319 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-04 10:29:58,319 runserver [31;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 401 [0.01, 127.0.0.1:60682][0m
+INFO 2025-06-04 10:30:00,778 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [2.45, 127.0.0.1:60682][0m
+INFO 2025-06-04 10:30:00,785 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.00, 127.0.0.1:60680][0m
+ERROR 2025-06-04 10:30:03,877 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py", line 24, in get_isInterestSent
+    request_user = self.request.user
+                   ^^^^^^^^^^^^
+AttributeError: 'UserSuggestionSerializer' object has no attribute 'request'
+ERROR 2025-06-04 10:30:03,882 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 500 [3.09, 127.0.0.1:60682][0m
+INFO 2025-06-04 10:30:04,403 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.00, 127.0.0.1:60680][0m
+ERROR 2025-06-04 10:30:07,456 log Internal Server Error: /api/v1/chat/suggested-friends/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py", line 24, in get_isInterestSent
+    request_user = self.request.user
+                   ^^^^^^^^^^^^
+AttributeError: 'UserSuggestionSerializer' object has no attribute 'request'
+ERROR 2025-06-04 10:30:07,461 runserver [35;1mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 500 [3.05, 127.0.0.1:60682][0m
+INFO 2025-06-04 10:30:24,076 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:30:24,734 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:30:50,201 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:30:50,837 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:30:52,001 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:30:52,628 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:30:54,875 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:30:55,485 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:31:05,730 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:31:06,323 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:31:07,477 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:31:08,071 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:31:09,305 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 10:31:09,898 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 10:31:12,467 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 10:31:12,467 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 10:31:12,468 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 10:31:13,681 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:31:18,602 runserver [mHTTP GET /api/v1/chat/suggested-friends/?exclude_ids= 200 [4.92, 127.0.0.1:50626][0m
+INFO 2025-06-04 10:31:36,161 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=g&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:31:39,901 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=g&exclude_ids= 200 [3.74, 127.0.0.1:50626][0m
+INFO 2025-06-04 10:32:06,158 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=G&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:32:09,699 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=G&exclude_ids= 200 [3.54, 127.0.0.1:50626][0m
+INFO 2025-06-04 10:32:23,523 runserver [mHTTP GET /engine-room/ 200 [3.07, 127.0.0.1:44234][0m
+INFO 2025-06-04 10:32:31,000 runserver [mHTTP GET /engine-room/chat/interest/ 200 [4.68, 127.0.0.1:44234][0m
+INFO 2025-06-04 10:32:33,661 runserver [mHTTP GET /engine-room/jsi18n/ 200 [2.63, 127.0.0.1:44234][0m
+INFO 2025-06-04 10:32:41,611 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gabotu+%28pending%29&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:32:44,016 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gabotu&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:32:44,514 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=gabotu+%28pending%29&exclude_ids= 200 [2.90, 127.0.0.1:50626][0m
+INFO 2025-06-04 10:32:47,381 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=gabotu&exclude_ids= 200 [3.36, 127.0.0.1:60662][0m
+INFO 2025-06-04 10:32:54,542 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=gabo&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:32:58,340 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=gabo&exclude_ids= 200 [3.80, 127.0.0.1:60662][0m
+INFO 2025-06-04 10:33:32,096 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=ty&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:33:36,330 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=ty&exclude_ids= 200 [4.23, 127.0.0.1:60662][0m
+INFO 2025-06-04 10:33:36,991 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=lec&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:33:37,621 runserver [mHTTP OPTIONS /api/v1/chat/suggested-friends/?search=le&exclude_ids= 200 [0.00, 127.0.0.1:50624][0m
+INFO 2025-06-04 10:33:40,632 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=lec&exclude_ids= 200 [3.64, 127.0.0.1:60662][0m
+INFO 2025-06-04 10:33:41,244 runserver [mHTTP GET /api/v1/chat/suggested-friends/?search=le&exclude_ids= 200 [3.62, 127.0.0.1:50626][0m
