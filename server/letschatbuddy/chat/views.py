@@ -7,7 +7,7 @@ from rest_framework_simplejwt.token_blacklist.models import BlacklistedToken, Ou
 from rest_framework_simplejwt.views import TokenRefreshView
 from rest_framework_simplejwt.exceptions import InvalidToken
 from rest_framework.exceptions import ValidationError
-from django.db.models import Q
+from django.db.models import Q, F, Value, Case, When
 
 from accounts.models import CustomUser
 from .models import (
@@ -19,7 +19,8 @@ from .models import (
 from .serializers import (
     UserSuggestionSerializer,
     InterestSendSerializer,
-    InterestReceiveSerializer
+    InterestReceiveSerializer,
+    ChatRoomSerializer
 )
 
 logger = logging.getLogger(__name__)
@@ -149,4 +150,26 @@ class InterestActionAPIView(views.APIView):
         interest.save()
         return Response({"message": "Interest updated successfully."}, status=status.HTTP_200_OK)
     
-    
+
+class ChatRoomListAPIView(generics.ListAPIView):
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = UserSuggestionSerializer
+
+    def get_queryset(self):
+        user = self.request.user
+        
+        sender_ids = Interest.objects.filter(
+            receiver=user,
+            status='accepted'
+        ).values_list('sender_id', flat=True)
+        
+        receiver_ids = Interest.objects.filter(
+            sender=user,
+            status='accepted'
+        ).values_list('receiver_id', flat=True)
+                
+        connected_user_ids = set(sender_ids).union(set(receiver_ids))
+        
+        return CustomUser.objects.filter(id__in=connected_user_ids)
+
+

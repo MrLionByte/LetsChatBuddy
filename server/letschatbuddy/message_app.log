@@ -9898,3 +9898,542 @@ INFO 2025-06-04 14:21:49,434 runserver [mHTTP OPTIONS /api/v1/chat/interests-se
 INFO 2025-06-04 14:21:49,435 runserver [mHTTP OPTIONS /api/v1/chat/interests-send/ 200 [0.01, 127.0.0.1:47338][0m
 INFO 2025-06-04 14:21:52,471 runserver [mHTTP GET /api/v1/chat/interests-send/ 200 [3.03, 127.0.0.1:47348][0m
 INFO 2025-06-04 14:21:52,473 runserver [mHTTP GET /api/v1/chat/interests-send/ 200 [3.03, 127.0.0.1:47346][0m
+INFO 2025-06-04 14:26:30,647 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:26:31,313 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:26:32,544 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:26:33,185 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:26:40,396 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:26:41,096 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:26:44,272 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:26:44,839 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:26:47,071 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:26:47,660 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:26:50,392 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:26:50,392 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:26:50,392 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:26:57,080 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 14:26:57,751 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:27:00,521 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:27:00,521 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:27:00,521 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:27:05,156 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 14:27:05,869 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:27:08,212 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:27:08,212 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:27:08,212 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:27:10,203 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 14:27:10,851 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:27:13,657 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:27:13,657 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:27:13,658 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:27:14,213 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 14:27:14,883 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:27:16,134 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 14:27:16,775 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:27:19,373 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:27:19,374 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:27:19,374 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:27:21,127 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 14:27:21,757 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:27:24,603 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:27:24,603 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:27:24,604 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:48:08,454 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:48:09,113 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:48:10,375 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:48:11,006 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:48:13,677 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:48:13,677 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:48:13,677 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:48:26,524 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:48:27,155 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:48:29,774 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:48:29,774 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:48:29,774 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:48:41,610 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:48:42,213 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:48:43,433 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:48:44,010 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:48:46,752 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:48:46,752 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:48:46,752 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:50:55,226 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:50:55,877 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:50:58,116 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:50:58,716 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:51:01,408 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:51:01,408 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:51:01,409 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:52:19,086 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:19,735 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:21,878 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:22,468 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:23,594 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:24,245 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:27,476 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:28,089 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:31,323 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:31,935 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:35,121 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:35,731 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:36,966 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:37,551 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:38,769 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:39,373 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:41,623 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:52:42,192 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:52:44,628 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:52:44,628 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:52:44,629 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:55:52,228 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:55:52,870 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:55:55,030 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:55:55,623 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:55:58,371 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:55:58,371 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:55:58,372 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:55:59,953 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:00,629 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:01,776 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:02,391 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:03,642 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:04,241 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:06,462 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:07,021 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:08,232 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:08,804 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:11,478 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:56:11,478 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:56:11,478 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:56:14,164 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:14,778 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:17,521 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:56:17,522 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:56:17,522 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:56:34,330 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:35,018 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:36,251 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:36,834 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:37,979 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:38,567 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:39,807 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:40,371 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:41,573 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:42,138 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:43,341 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:43,894 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:48,125 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:48,801 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:50,029 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:50,683 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:51,922 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:52,547 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:55,203 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:56:55,203 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:56:55,204 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:56:56,890 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:57,549 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:56:58,756 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/serializers.py changed, reloading.
+INFO 2025-06-04 14:56:59,346 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:57:01,963 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:57:01,963 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:57:01,963 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:57:08,743 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:57:09,401 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:57:11,895 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:57:11,895 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:57:11,895 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:57:15,830 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:57:16,496 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:57:18,958 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:57:18,958 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:57:18,959 server Listening on TCP address 127.0.0.1:8000
+WARNING 2025-06-04 14:58:03,836 log Unauthorized: /api/v1/chat/chatroom/
+WARNING 2025-06-04 14:58:03,837 runserver [31;1mHTTP GET /api/v1/chat/chatroom/ 401 [0.01, 127.0.0.1:54350][0m
+INFO 2025-06-04 14:58:25,099 views User logged-in successfully sampleUser
+INFO 2025-06-04 14:58:26,022 runserver [mHTTP POST /api/v1/accounts/login/ 200 [4.71, 127.0.0.1:54350][0m
+ERROR 2025-06-04 14:58:57,800 log Internal Server Error: /api/v1/chat/chatroom/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 166, in list
+    queryset = self.get_queryset()
+  File "/home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py", line 160, in get_queryset
+    return Interest.objects.filter(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        Q(user1=user) | Q(user2=user),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        status='accepted'
+        ^^^^^^^^^^^^^^^^^
+    ).order_by('-timestamp')
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1491, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1509, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/query.py", line 1516, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1500, in build_filter
+    return self._add_q(
+           ~~~~~~~~~~~^
+        filter_expr,
+        ^^^^^^^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/db/models/sql/query.py", line 1802, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'user1' into field. Choices are: id, message, receiver, receiver_id, sender, sender_id, status, timestamp
+ERROR 2025-06-04 14:58:57,808 runserver [35;1mHTTP GET /api/v1/chat/chatroom/ 500 [12.14, 127.0.0.1:54350][0m
+INFO 2025-06-04 14:59:17,820 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:59:18,540 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:59:19,779 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:59:20,459 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:59:21,773 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:59:22,424 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:59:23,690 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 14:59:24,359 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 14:59:27,068 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 14:59:27,068 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 14:59:27,069 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 14:59:31,182 runserver [mHTTP GET /api/v1/chat/chatroom/ 200 [3.25, 127.0.0.1:55374][0m
+INFO 2025-06-04 15:02:43,561 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:02:44,149 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:02:45,395 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:02:46,058 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:02:47,214 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:02:47,848 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:02:50,651 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:02:50,651 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:02:50,652 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:02:51,174 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:02:51,768 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:02:52,984 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:02:53,575 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:02:55,825 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:02:56,572 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:02:57,809 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:02:58,379 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:03:01,184 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:03:01,184 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:03:01,184 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:03:06,753 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:03:07,366 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:03:10,365 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:03:10,365 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:03:10,366 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:03:26,935 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:03:27,549 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:03:28,764 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:03:29,404 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:03:31,656 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:03:32,302 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:03:34,873 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:03:34,873 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:03:34,873 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:03:42,735 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:03:43,499 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:04:02,048 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:04:04,669 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:04:04,670 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:04:04,670 server Listening on TCP address 127.0.0.1:8000
+ERROR 2025-06-04 15:04:17,584 log Internal Server Error: /api/v1/chat/chatroom/
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Interest' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/rest_framework/fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `username` on serializer `UserSuggestionSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Interest` instance.
+Original exception text was: 'Interest' object has no attribute 'username'.
+ERROR 2025-06-04 15:04:17,593 runserver [35;1mHTTP GET /api/v1/chat/chatroom/ 500 [5.60, 127.0.0.1:39060][0m
+INFO 2025-06-04 15:05:03,355 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:05:04,082 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:05:07,236 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:05:07,236 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:05:07,237 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:05:08,469 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:05:09,083 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:05:10,293 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:05:10,857 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:05:13,585 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:05:13,585 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:05:13,585 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:05:38,973 runserver [mHTTP GET /api/v1/chat/chatroom/ 200 [3.96, 127.0.0.1:40918][0m
+INFO 2025-06-04 15:07:59,669 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:01,137 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:03,730 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:08:03,731 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:08:03,731 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:08:05,872 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:07,126 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:10,609 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:12,588 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:14,133 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:15,677 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:18,164 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:08:18,164 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:08:18,165 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:08:21,539 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:23,194 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:25,644 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:08:25,645 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:08:25,646 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:08:37,619 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:38,703 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:41,079 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:42,552 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:44,171 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:45,822 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:48,577 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:08:48,577 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:08:48,582 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:08:53,821 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:54,775 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:08:58,144 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:08:59,507 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:02,463 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:09:02,463 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:09:02,464 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:09:07,502 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:09,020 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:10,594 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:12,167 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:14,990 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:09:14,991 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:09:14,992 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:09:16,014 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:17,368 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:18,757 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:19,791 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:22,189 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:23,076 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:24,420 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:25,426 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:27,992 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:09:27,993 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:09:27,994 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:09:40,559 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:41,759 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:44,264 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:09:44,264 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:09:44,265 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:09:44,572 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:45,807 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:48,173 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:49,065 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:50,418 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:51,220 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:54,085 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:09:54,085 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:09:54,087 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:09:54,811 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:55,746 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:56,959 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:09:58,115 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:09:59,520 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:00,522 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:01,824 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:02,732 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:05,049 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:06,092 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:08,809 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:10:08,809 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:10:08,810 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:10:20,941 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:22,151 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:23,380 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:24,474 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:27,374 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:10:27,374 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:10:27,376 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:10:31,258 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:32,791 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:34,388 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:35,427 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:38,866 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:10:38,866 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:10:38,867 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:10:39,930 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:40,798 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:43,635 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:10:43,635 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:10:43,636 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:10:53,665 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:54,539 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:10:56,773 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 15:10:57,625 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:11:01,652 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:11:01,652 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:11:01,653 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 15:12:01,787 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/urls.py changed, reloading.
+INFO 2025-06-04 15:12:02,770 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 15:12:05,506 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 15:12:05,506 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 15:12:05,507 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 16:18:36,715 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 16:18:37,378 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 16:18:40,211 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 16:18:40,211 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 16:18:40,212 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 16:23:59,797 autoreload /home/mrlionbyte/Project/BW2/server/letschatbuddy/chat/views.py changed, reloading.
+INFO 2025-06-04 16:24:01,066 autoreload Watching for file changes with StatReloader
+INFO 2025-06-04 16:24:03,786 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-04 16:24:03,787 server Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2025-06-04 16:24:03,788 server Listening on TCP address 127.0.0.1:8000
+INFO 2025-06-04 16:35:03,365 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:47392][0m
+INFO 2025-06-04 16:35:03,368 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:47396][0m
+WARNING 2025-06-04 16:35:03,408 log Unauthorized: /api/v1/chat/active-chats/
+WARNING 2025-06-04 16:35:03,411 runserver [31;1mHTTP GET /api/v1/chat/active-chats/ 401 [0.03, 127.0.0.1:47408][0m
+WARNING 2025-06-04 16:35:03,412 log Unauthorized: /api/v1/chat/active-chats/
+WARNING 2025-06-04 16:35:03,414 runserver [31;1mHTTP GET /api/v1/chat/active-chats/ 401 [0.04, 127.0.0.1:47406][0m
+INFO 2025-06-04 16:35:03,436 runserver [mHTTP OPTIONS /api/v1/accounts/token/refresh/ 200 [0.01, 127.0.0.1:47392][0m
+INFO 2025-06-04 16:35:03,438 runserver [mHTTP OPTIONS /api/v1/accounts/token/refresh/ 200 [0.02, 127.0.0.1:47396][0m
+INFO 2025-06-04 16:35:06,505 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [3.06, 127.0.0.1:47406][0m
+INFO 2025-06-04 16:35:06,508 runserver [mHTTP POST /api/v1/accounts/token/refresh/ 200 [3.06, 127.0.0.1:47408][0m
+INFO 2025-06-04 16:35:06,524 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:47396][0m
+INFO 2025-06-04 16:35:06,528 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:47392][0m
+INFO 2025-06-04 16:35:09,589 runserver [mHTTP GET /api/v1/chat/active-chats/ 200 [3.06, 127.0.0.1:47408][0m
+INFO 2025-06-04 16:35:09,599 runserver [mHTTP GET /api/v1/chat/active-chats/ 200 [3.07, 127.0.0.1:47406][0m
+INFO 2025-06-04 16:36:33,372 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:44456][0m
+INFO 2025-06-04 16:36:33,373 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:44464][0m
+INFO 2025-06-04 16:36:36,120 runserver [mHTTP GET /api/v1/chat/active-chats/ 200 [2.74, 127.0.0.1:44484][0m
+INFO 2025-06-04 16:36:36,132 runserver [mHTTP GET /api/v1/chat/active-chats/ 200 [2.75, 127.0.0.1:44472][0m
+INFO 2025-06-04 16:37:27,420 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:44464][0m
+INFO 2025-06-04 16:37:27,427 runserver [mHTTP OPTIONS /api/v1/chat/active-chats/ 200 [0.01, 127.0.0.1:44456][0m
+INFO 2025-06-04 16:37:30,177 runserver [mHTTP GET /api/v1/chat/active-chats/ 200 [2.73, 127.0.0.1:44472][0m
+INFO 2025-06-04 16:37:30,178 runserver [mHTTP GET /api/v1/chat/active-chats/ 200 [2.71, 127.0.0.1:44484][0m

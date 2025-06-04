@@ -4,7 +4,8 @@ from .views import (
     InterestCreateAPIView,
     InterestSentListAPIView,
     InterestReceivedListAPIView,
-    InterestActionAPIView
+    InterestActionAPIView,
+    ChatRoomListAPIView
     )
 
 
@@ -14,5 +15,5 @@ urlpatterns = [
     path('interests-send/', InterestSentListAPIView.as_view(), name='interest_send'),
     path('interests-receive/', InterestReceivedListAPIView.as_view(), name='interest_receive'),
     path('interests-action/', InterestActionAPIView.as_view(), name='interest_action'),
-    
+    path('active-chats/', ChatRoomListAPIView.as_view(), name='chatroom'),
 ]

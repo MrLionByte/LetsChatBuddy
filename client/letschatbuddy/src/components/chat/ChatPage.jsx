@@ -3,13 +3,19 @@ import { Routes, Route, useNavigate, useParams } from 'react-router-dom'
 import ChatList from './ChatList'
 import ChatInterface from './ChatInterface'
 import { generateMockMessages } from '../../data/mockData'
+import {useChatList} from './_lib'
 
-const ChatPage = ({ currentUser, activeChats }) => {
-  const [messages, setMessages] = useState({})
-  const [selectedChatId, setSelectedChatId] = useState(null)
-  const navigate = useNavigate()
-  const params = useParams()
-  
+const ChatPage = ({ currentUser }) => {
+  const {
+      messages,
+      setMessages,
+      selectedChatId,
+      setSelectedChatId,
+      activeChats,
+      navigate,
+      params
+  } = useChatList(currentUser);
+
   // Initialize messages for each chat if not already present
   useEffect(() => {
     const newMessages = { ...messages }
