@@ -18,18 +18,17 @@ const Login = () => {
     setError('')
     try {
       const response = await authService.login(data)
-      console.log(response);
       
       const avatars = ['👤', '👩', '👨', '🧑', '👦', '👧', '🧔', '🧕', '🧙', '🧛']
       const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)]
 
       const userWithAvatar = {
-        ...response.user,         // assumes response contains user object
-        avatar: response.user.avatar || randomAvatar, // fallback if backend doesn't provide
+        ...response.user,
+        avatar: response.user.avatar || randomAvatar,
       }
 
-      login(userWithAvatar)      // store in context
-      navigate('/app')          // redirect to main app
+      login(userWithAvatar)
+      navigate('/app')
     } catch (err) {
       const message = err?.response?.data?.message[0] || 'Login failed. Check your credentials.'
       setError(message)

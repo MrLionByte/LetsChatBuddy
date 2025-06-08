@@ -3,7 +3,6 @@ from accounts.models import CustomUser
 from django.db.models import Q
 from .models import (
     Interest,
-    ChatRoom,
     Message
     )
 

@@ -13,7 +13,8 @@ class UserSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = CustomUser
-        fields = ['username', 'email', 'password', 'password_confirm', 'avatar']
+        fields = ['id','username', 'email', 'password', 'password_confirm', 'avatar']
+        read_only_fields = ['id']
         extra_kwargs = {
             'email': {'required': True},
             'username': {'required': True},
@@ -56,22 +57,16 @@ class LoginSerializer(serializers.Serializer):
     def validate(self, attrs):
         email = attrs.get('email')
         password = attrs.get('password')
-        print("XXXX", email, password)
         
         try:
             user = CustomUser.objects.get(email=email)
-            print("2222", user)
             if not user.check_password(password):
-                print("Error 1")
                 raise serializers.ValidationError({'error': "password-mismatch", "message": "Incorrect password."})
             if not user.is_active:
-                print("Error 2")
                 if not user.last_login:
-                    print("Error 3")
                     raise serializers.ValidationError({"error": "account-not-activated", "message": "Your account is not activated yet. Please check your email."})
                 raise serializers.ValidationError({"error": "account-blocked", "message": "Your account is blocked by admin. Please contact support."})
             attrs['user'] = user
-            print("Error 4", attrs)
             return attrs
         
         except CustomUser.DoesNotExist:

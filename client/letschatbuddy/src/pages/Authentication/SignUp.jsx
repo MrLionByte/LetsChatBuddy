@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { Eye, EyeOff, ArrowLeft } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { createAvatar } from '@dicebear/core'
-import { funEmoji } from '@dicebear/collection'
 import Logo from '../../assets/Logo.svg'
 import { useAuth } from '../../contexts/AuthContext'
 import { authService } from '../../services/apiService'
@@ -45,7 +43,6 @@ const Signup = () => {
 
       login(response.user)
     } catch (err) {
-      console.error(err)
       setServerError(err.response?.data?.message[0] || 'Signup failed')
     }
   }

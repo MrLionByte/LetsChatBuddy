@@ -43,9 +43,6 @@ class SignupView(generics.CreateAPIView):
     serializer_class = UserSerializer
     
     def post(self, request, *args, **kwargs):
-        print(">>>! ", request)
-        print(">>>! ", request.data)
-
         serializer = self.get_serializer(data=request.data)
         try:
             serializer.is_valid(raise_exception=True)
@@ -75,7 +72,6 @@ class SignupView(generics.CreateAPIView):
         response.set_cookie('ua', request.META.get('HTTP_USER_AGENT', ''))
         response.set_cookie('ip', request.META.get('REMOTE_ADDR', ''))
         
-        logger.info(f'User signed up successfully {user.username}')
         return response
         
 
@@ -101,18 +97,15 @@ class LoginView(views.APIView):
     permission_classes = (permissions.AllowAny,)
     
     def post(self, request):
-        print(">>><<<", request.data)
         try:
             serializer = LoginSerializer(data=request.data)
             serializer.is_valid(raise_exception=True)
-            print(">>><<<", serializer)
             user = serializer.validated_data['user']
-            print(">>><<<", user)
             login(request, user)
             refresh = RefreshToken.for_user(user)
             access_token = str(refresh.access_token)
             response = Response({
-                'user': UserSerializer(self.request.user).data,
+                'user': UserSerializer(user).data,
                 "access": access_token,
             }, status=status.HTTP_200_OK)
             
@@ -127,12 +120,11 @@ class LoginView(views.APIView):
             
             response.set_cookie('ua', request.META.get('HTTP_USER_AGENT', ''))
             response.set_cookie('ip', request.META.get('REMOTE_ADDR', ''))
-            logger.info(f'User logged-in successfully {user.username}')
-
+            
             return response
 
         except ValidationError as ve:
-            print("ZZZZ", ve)
+            logger.error("Validation error during login", extra={'data': str(ve)})
             raise ve
 
         except Exception as e:

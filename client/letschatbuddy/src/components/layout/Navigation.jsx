@@ -1,14 +1,33 @@
-import { Users, MessageCircle, MessageSquareDashed, Bell, Send } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react';
+import { Users, MessageCircle, MessageSquareDashed, Bell, Send } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Navigation = ({ activeTab, onTabChange, interestCount, chatCount }) => {
+  const [selectedTab, setSelectedTab] = useState(activeTab || 'discover');
+
+  // Load from localStorage on mount
+  useEffect(() => {
+    const storedTab = localStorage.getItem('connectChatActiveTab');
+    if (storedTab) {
+      setSelectedTab(storedTab);
+      if (onTabChange) onTabChange(storedTab);
+    }
+  }, []);
+
+  // Handle tab change and persist to localStorage
+  const handleTabChange = (tabId) => {
+    setSelectedTab(tabId);
+    localStorage.setItem('connectChatActiveTab', tabId);
+    if (onTabChange) onTabChange(tabId);
+  };
+
   const tabs = [
     { id: 'discover', label: 'Discover', icon: <Users className="w-5 h-5" /> },
-    { id: 'random', label: 'Random-Chats', icon: <MessageSquareDashed className="w-5 h-5" />, },
+    // { id: 'random', label: 'Random-Chats', icon: <MessageSquareDashed className="w-5 h-5" /> },
     { id: 'interests', label: 'Interests', icon: <Send className="w-5 h-5" />, count: interestCount },
     { id: 'requests', label: 'Received', icon: <Bell className="w-5 h-5" />, count: interestCount },
     { id: 'chats', label: 'Chats', icon: <MessageCircle className="w-5 h-5" />, count: chatCount },
-  ]
+  ];
 
   return (
     <nav className="bg-dark-500/50 backdrop-blur-xl rounded-2xl p-2 border border-dark-400/50">
@@ -16,9 +35,9 @@ const Navigation = ({ activeTab, onTabChange, interestCount, chatCount }) => {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => onTabChange(tab.id)}
+            onClick={() => handleTabChange(tab.id)}
             className={`relative flex items-center space-x-2 px-4 py-3 rounded-xl transition-all duration-300 mr-2 ${
-              activeTab === tab.id
+              selectedTab === tab.id
                 ? 'bg-primary-600 text-white shadow-lg'
                 : 'text-white/60 hover:text-white hover:bg-dark-400/50'
             }`}
@@ -38,8 +57,7 @@ const Navigation = ({ activeTab, onTabChange, interestCount, chatCount }) => {
         ))}
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navigation;
-

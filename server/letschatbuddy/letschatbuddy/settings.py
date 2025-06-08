@@ -16,6 +16,8 @@ import dj_database_url
 import os
 from logging.handlers import RotatingFileHandler
 from datetime import timedelta
+from urllib.parse import urlparse
+import ssl
 
 load_dotenv()
 
@@ -39,7 +41,7 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 # Application definition
 
 INSTALLED_APPS = [
-    'daphne',               #App for running daphne
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -112,13 +114,26 @@ DATABASES = {
 }
 
 
+REDIS_URL = os.getenv('REDIS_URL', '')
+REDIS_CACHE_TIMEOUT = int(os.getenv('REDIS_CACHE_TIMEOUT', 3600))
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": f"{REDIS_URL}/1",  #
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [os.getenv('REDIS_URL')],
-            #  "capacity": 500,
-            "expiry": 30,
+            "hosts": [REDIS_URL],
+            "capacity": 1500,
+            "expiry": 60,
         },
     },
 }
@@ -222,4 +237,8 @@ LOGGING = {
         },
     },
 }
+
+
+
+#  daphne -b 0.0.0.0 -p 8000 letschatbuddy.asgi:application
 

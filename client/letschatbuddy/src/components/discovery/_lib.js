@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import {chatService} from '../../services/apiService';
 import { 
     getSuggestedFriends,
-    saveSuggestedFriends,
-    clearSuggestedFriends
+    saveSuggestedFriends
     } from '../../utils/storage';
 
 const DEBOUNCE_DELAY = 500;
@@ -32,8 +31,7 @@ export const useUserDiscovery = (currentUser, sentInterests, onSendInterest) => 
             if (excludeIds.length) params.append('exclude_ids', excludeIds.join(','));
     
             const data = await chatService.getSuggestedFriends(params.toString());
-            console.log(data);
-            
+           
             setSuggestedUsers(data);
             if (!searchTerm) {
                 saveSuggestedFriends(data);
@@ -49,7 +47,6 @@ export const useUserDiscovery = (currentUser, sentInterests, onSendInterest) => 
     const handleSendInterest = async (user) => {
         try {
             const response = await chatService.sendInterest(user.id);
-            console.log(response);
             
             if (onSendInterest) {
                 onSendInterest(user.id);

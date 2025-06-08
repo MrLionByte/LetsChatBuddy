@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
+import {ChatListSkeleton} from '../loader/ChatSkeleton'
 
-const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages }) => {
+const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages, loading }) => {
+  
+  if (loading) {
+    return <ChatListSkeleton />;
+  }
+  
   if (activeChats.length === 0) {
     return (
       <div className="text-center py-12">
@@ -9,16 +15,16 @@ const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages }) => {
         <h3 className="text-xl font-semibold text-white mb-2">No active chats</h3>
         <p className="text-white/60">Accept some interests to start chatting!</p>
       </div>
-    )
+    );
   }
 
   return (
     <div className="space-y-4">
       {activeChats.map((chat, index) => {
-        const chatMessages = messages[chat.id] || []
+        const chatMessages = messages[chat.id] || [];
         const lastMessage = chatMessages.length > 0 ? 
-          chatMessages[chatMessages.length - 1] : null
-          
+          chatMessages[chatMessages.length - 1] : null;
+        
         return (
           <motion.div
             key={chat.id}
@@ -33,23 +39,30 @@ const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages }) => {
             <div className="flex items-center space-x-4">
               <div className="relative">
                 <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center text-xl">
-                  {chat.avatar}
+                  <img 
+                    src={chat?.avatar || '/avatars/default.png'} 
+                    alt={chat?.name?.slice(0, 2).toUpperCase()} 
+                    className="w-full h-full rounded-full object-cover"
+                  />
                 </div>
+                
                 <div className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-dark-500 ${
-                  chat.status === 'online' ? 'bg-green-500' : 
-                  chat.status === 'away' ? 'bg-yellow-500' : 
-                  'bg-gray-500'
+                  chat.is_online ? 'bg-green-500' : 'bg-gray-500'
                 }`} />
               </div>
               <div className="flex-1">
                 <div className="flex justify-between items-start">
-                  <h4 className="text-white font-semibold">{chat.name}</h4>
+                  <h4 className="text-white font-semibold">{chat.username}</h4>
                   {lastMessage && (
                     <span className="text-xs text-white/40">{lastMessage.timestamp}</span>
                   )}
                 </div>
                 <p className="text-white/60 text-sm truncate max-w-xs">
                   {lastMessage ? lastMessage.text : 'Start a conversation'}
+                </p>
+                
+                <p className="text-xs text-white/40 mt-1">
+                  {chat.is_online ? 'Online' : `Last seen ${chat.last_seen}`}
                 </p>
               </div>
               <div className="text-white/40">
@@ -59,10 +72,11 @@ const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages }) => {
               </div>
             </div>
           </motion.div>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
 export default ChatList;
+

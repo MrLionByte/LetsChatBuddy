@@ -60,7 +60,7 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header */}
+
       <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-dark-500/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
@@ -70,7 +70,6 @@ const LandingPage = () => {
             <span className="text-xl font-bold text-white">LetsChatBuddy</span>
           </div>
           
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-white/80 hover:text-white transition-colors">Features</a>
             <a href="#testimonials" className="text-white/80 hover:text-white transition-colors">Testimonials</a>
@@ -81,7 +80,6 @@ const LandingPage = () => {
               </Link>
           </nav>
           
-          {/* Mobile menu button */}
           <button 
             className="md:hidden text-white p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -90,7 +88,6 @@ const LandingPage = () => {
           </button>
         </div>
         
-        {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <motion.div 
             initial={{ opacity: 0, height: 0 }}
@@ -132,7 +129,6 @@ const LandingPage = () => {
         )}
       </header>
 
-      {/* Hero Section */}
       <section className="gradient-bg pt-32 pb-20 md:pt-40 md:pb-32">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
@@ -175,7 +171,7 @@ const LandingPage = () => {
                 className="relative"
               >
                 <div className="relative mx-auto w-full max-w-md">
-                  {/* App preview mockup */}
+
                   <div className="bg-dark-600/60 rounded-2xl shadow-2xl overflow-hidden border border-green-800/50">
                     <div className="bg-dark-600/60 px-4 py-2 flex items-center justify-between border-b border-dark-400">
                       <div className="flex items-center space-x-2">
@@ -208,7 +204,7 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Decorative elements */}
+                  
                   <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-500/20 rounded-full blur-2xl"></div>
                   <div className="absolute -top-6 -left-6 w-32 h-32 bg-secondary-500/20 rounded-full blur-2xl"></div>
                 </div>
@@ -219,7 +215,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section id="features" className="bg-dark-500 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -248,7 +243,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section id="testimonials" className="gradient-bg py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -287,7 +281,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="bg-dark-500 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -309,7 +302,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-dark-500 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">

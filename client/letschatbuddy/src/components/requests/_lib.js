@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import {chatService} from '../../services/apiService';
 
 
-export const useInterests = (currentUser, sentInterests, onSendInterest) => {
+export const useSentInterests = () => {
     const [fetchFromBackend, setFetchFromBackend] = useState(true);
-    const [sendedInterests, setSendedInterests] = useState([]);
+    const [sentInterests, setSendedInterests] = useState([]);
     const [loading, setLoading] = useState(false);
 
     const fetchSendedInterests = async () => {
@@ -12,8 +12,6 @@ export const useInterests = (currentUser, sentInterests, onSendInterest) => {
         try {
             
             const data = await chatService.getSendedInterests();
-            console.log(data);
-
             setSendedInterests(data);
         } catch (err) {
             console.error('Error fetching received interests:', err);
@@ -30,7 +28,7 @@ export const useInterests = (currentUser, sentInterests, onSendInterest) => {
     }, [fetchFromBackend]);
 
     return { 
-       sendedInterests,
+       sentInterests,
        loading,
      };
 };

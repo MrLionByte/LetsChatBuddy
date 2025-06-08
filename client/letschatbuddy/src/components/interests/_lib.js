@@ -12,7 +12,6 @@ export const useInterests = (onAcceptInterest, onRejectInterest) => {
         try {
             
             const data = await chatService.getReceivedInterests();
-            console.log(data);
 
             setReceivedInterests(data);
         } catch (err) {
@@ -27,7 +26,6 @@ export const useInterests = (onAcceptInterest, onRejectInterest) => {
         setLoading(true);
         try {
             const data = await chatService.handleInterestAction(interestId, 'accept');
-            console.log(data);
             setReceivedInterests(prev =>
                 prev.filter(interest => interest.id !== interestId)
             );
@@ -43,7 +41,6 @@ export const useInterests = (onAcceptInterest, onRejectInterest) => {
         setLoading(true);
         try {
             const data = await chatService.handleInterestAction(interestId, 'reject');
-            console.log(data);
             setReceivedInterests(prev =>
             prev.filter(interest => interest.id !== interestId)
             );

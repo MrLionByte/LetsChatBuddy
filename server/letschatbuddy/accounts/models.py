@@ -8,6 +8,7 @@ class CustomUser(AbstractUser):
     bio = models.TextField(blank=True)
     tags = models.TextField(blank=True)
     friend_count = models.PositiveIntegerField(default=0)
+    last_seen = models.DateTimeField(null=True, blank=True)
 
     groups = models.ManyToManyField(
         Group,

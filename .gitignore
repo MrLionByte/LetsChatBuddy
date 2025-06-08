@@ -9,3 +9,4 @@ server/letschatbuddy/media/
 .vscode/
 .idea/
 
+server/letschatbuddy/message_app.log

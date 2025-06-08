@@ -26,22 +26,18 @@ class Interest(models.Model):
         
     def __str__(self):
         return f"{self.sender.username} {self.sender.id} -> {self.receiver.username} ({self.status})"
-    
-
-class ChatRoom(models.Model):
-    participants = models.ManyToManyField(settings.AUTH_USER_MODEL)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return " & ".join([user.username for user in self.participants.all()])
-    
 
 class Message(models.Model):
-    chat_room = models.ForeignKey(ChatRoom, related_name='messages', on_delete=models.CASCADE)
+    user_pair_id = models.CharField(max_length=255, default="anonymous")
     sender = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     content = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)
+
+    class Meta:
+        indexes = [
+            models.Index(fields=['user_pair_id', 'timestamp']),
+        ]
 
     def __str__(self):
         return f"{self.sender.username}: {self.content[:20]}"

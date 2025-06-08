@@ -18,7 +18,6 @@ class ChatWebsocketMiddleware(BaseMiddleware):
         
         query_string = scope.get("query_string", b"").decode("utf-8")
         query_params = dict(q.split('=') for q in query_string.split("&") if "=" in q)
-        
         token = query_params.get("token")
         
         if not token:
@@ -32,9 +31,7 @@ class ChatWebsocketMiddleware(BaseMiddleware):
                 await self.close_connection(send, 4001, "Invalid token")
                 return
             
-            print(f"AT THIS POINT: {user_data}")
-            
-            user = await self.get_user(user_data["user_id"])
+            user = await get_user(user_data["user_id"])
             
             if not user:
                 logger.error("User not found for the provided token.")

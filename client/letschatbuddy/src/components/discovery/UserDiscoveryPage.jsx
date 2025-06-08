@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { Search } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { mockUsers } from '../../data/mockData'
 import {useUserDiscovery} from './_lib';
+import LoadingSpinner from '../../components/loader/LoadingSpinner';
 
 const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
   const {
@@ -36,13 +36,16 @@ const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
-        {filteredUsers.length > 0 ? (
+        {loading ? (
+          <div className="col-span-2 flex justify-center items-center py-12">
+            <LoadingSpinner size="large" text="Finding people for you..." />
+          </div>
+        ) : filteredUsers.length > 0 ? (
           filteredUsers.map((user, index) => (
             <UserCard 
               key={user.id}
               user={user}
               index={index}
-              isLoading={loading}
               onSendInterest={() => handleSendInterest(user)}
               isInterestSent={sentInterests.includes(user.id)}
             />
@@ -57,6 +60,7 @@ const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
           </div>
         )}
       </div>
+
     </div>
   )
 }
@@ -76,7 +80,7 @@ const UserCard = ({ user, index, onSendInterest, isInterestSent }) => {
                 {user.avatar ? (
                   <img src={user.avatar} className="w-10 h-10 rounded-full" alt={`${user.name}'s avatar`} />
                 ) : (
-                  <span>{user.name?.slice(0, 2).toUpperCase()}</span>
+                  <span>{user.name?.slice(0).toUpperCase()}</span>
                 )}
             </div>
             <div className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-dark-500 ${

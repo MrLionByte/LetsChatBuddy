@@ -12,7 +12,6 @@ from django.db.models import Q, F, Value, Case, When
 from accounts.models import CustomUser
 from .models import (
     Interest,
-    ChatRoom,
     Message
 )
 
@@ -33,7 +32,7 @@ class NonSuperuserQuerysetMixin:
         return super().get_queryset().filter(is_superuser=False)
 
 
-class SuggestedFriendsAPIView(NonSuperuserQuerysetMixin,generics.ListAPIView):
+class SuggestedFriendsAPIView(generics.ListAPIView):
     
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = UserSuggestionSerializer
@@ -76,7 +75,6 @@ class InterestCreateAPIView(generics.CreateAPIView):
     def post(self, request, *args, **kwargs):
         user = request.user
         receiver_id = request.data.get('receiver_id')
-        print(f"Receiver ID: {receiver_id}")
         if not receiver_id:
             raise ValidationError("Receiver ID is required.")
         
