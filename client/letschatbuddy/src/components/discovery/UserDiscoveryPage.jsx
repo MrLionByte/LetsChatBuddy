@@ -78,9 +78,9 @@ const UserCard = ({ user, index, onSendInterest, isInterestSent }) => {
           <div className="relative">
             <div className="w-12 h-12 bg-dark-800/80 rounded-full flex items-center justify-center text-xl">
                 {user.avatar ? (
-                  <img src={user.avatar} className="w-10 h-10 rounded-full" alt={`${user.name}'s avatar`} />
+                  <img src={user.avatar} className="w-10 h-10 rounded-full" alt={`${user.username}'s avatar`} />
                 ) : (
-                  <span>{user.name?.slice(0).toUpperCase()}</span>
+                  <span>{user.username?.slice(0).toUpperCase()}</span>
                 )}
             </div>
             <div className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-dark-500 ${

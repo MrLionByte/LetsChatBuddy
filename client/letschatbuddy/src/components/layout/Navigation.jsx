@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 const Navigation = ({ activeTab, onTabChange, interestCount, chatCount }) => {
   const [selectedTab, setSelectedTab] = useState(activeTab || 'discover');
 
-  // Load from localStorage on mount
   useEffect(() => {
     const storedTab = localStorage.getItem('connectChatActiveTab');
     if (storedTab) {
@@ -14,7 +13,6 @@ const Navigation = ({ activeTab, onTabChange, interestCount, chatCount }) => {
     }
   }, []);
 
-  // Handle tab change and persist to localStorage
   const handleTabChange = (tabId) => {
     setSelectedTab(tabId);
     localStorage.setItem('connectChatActiveTab', tabId);

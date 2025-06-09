@@ -51,7 +51,7 @@ const ChatInterface = ({
           <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
             <img 
               src={activeChat?.avatar} 
-              alt={activeChat.name?.slice(0).toUpperCase()} 
+              alt={activeChat.username?.slice(0).toUpperCase()} 
               className="w-full h-full rounded-full object-cover"
             />
           </div>

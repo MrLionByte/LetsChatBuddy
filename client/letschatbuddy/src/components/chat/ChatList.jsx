@@ -41,7 +41,7 @@ const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages, loading
                 <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center text-xl">
                   <img 
                     src={chat?.avatar || '/avatars/default.png'} 
-                    alt={chat?.name?.slice(0, 2).toUpperCase()} 
+                    alt={chat?.username?.slice(0, 2).toUpperCase()} 
                     className="w-full h-full rounded-full object-cover"
                   />
                 </div>
