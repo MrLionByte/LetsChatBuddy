@@ -26,8 +26,8 @@ const Header = ({ currentUser }) => {
           >
             <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
               <img 
-              src={activeChat?.avatar} 
-              alt={activeChat.username?.slice(0).toUpperCase()} 
+              src={currentUser?.avatar} 
+              alt={currentUser.username?.slice(0).toUpperCase()} 
               className="w-full h-full rounded-full object-cover"
             />
             </div>
