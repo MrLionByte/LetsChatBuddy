@@ -55,15 +55,15 @@ const ChatInterface = ({
               className="w-full h-full rounded-full object-cover"
             />
           </div>
-          <div className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-dark-500 ${
+          {/* <div className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-dark-500 ${
             activeChat.is_online ? 'bg-green-500' : 'bg-gray-500'
-          }`} />
+          }`} /> */}
         </div>
         <div>
           <h3 className="text-white font-semibold">{activeChat.username}</h3>
-          <p className="text-white/60 text-sm">
+          {/* <p className="text-white/60 text-sm">
             {activeChat.is_online ? 'Online' : `Last seen ${activeChat.last_seen}`}
-          </p>
+          </p> */}
         </div>
       </div>
 
