@@ -51,10 +51,11 @@ export const useUserDiscovery = (currentUser, sentInterests, onSendInterest) => 
             if (onSendInterest) {
                 onSendInterest(user.id);
             }
-            suggestedUsers(prevUsers => {
-                const filterUSers = prevUsers.filter(u => u.id !== user.id);
-                saveSuggestedFriends(filterUSers);
-                return filterUSers;
+
+            setSuggestedUsers(prevUsers => {
+                const filteredUsers = prevUsers.filter(u => u.id !== user.id);
+                saveSuggestedFriends(filteredUsers);
+                return filteredUsers;
             });
         } catch (error) {
             console.error('Error sending interest:', error);
