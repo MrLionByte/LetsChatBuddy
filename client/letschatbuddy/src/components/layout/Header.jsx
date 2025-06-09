@@ -26,7 +26,7 @@ const Header = ({ currentUser }) => {
           >
             <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
               <span className="text-white">
-                {currentUser?.avatar || currentUser?.username?.slice(0).toUpperCase()}</span>
+                {currentUser?.avatar || currentUser?.username[0]?.toUpperCase()}</span>
             </div>
             <span className="text-white hidden sm:inline-block">{currentUser?.username || 'User'}</span>
             <span className="w-2 h-2 border-r-2 border-b-2 border-white/70 transform rotate-45 mt-[-3px]"></span>
