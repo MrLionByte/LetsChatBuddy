@@ -1,36 +1,38 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
-import { Eye, EyeOff, ArrowLeft } from 'lucide-react'
+import { Eye, EyeOff, ArrowLeft, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Logo from '../../assets/Logo.svg'
 import { useAuth } from '../../contexts/AuthContext'
 import { authService } from '../../services/apiService'
 import { avatars } from '../../services/avatars'
 
-
 const Signup = () => {
   const { login } = useAuth()
   const [showPassword, setShowPassword] = useState(false)
   const [serverError, setServerError] = useState('')
+  const [loading, setLoading] = useState(false)
+
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors }
   } = useForm()
 
   const onSubmit = async (data) => {
     setServerError('')
-    const { username, email, password, password_confirm } = data;
+    setLoading(true)
+
+    const { username, email, password, password_confirm } = data
 
     if (password !== password_confirm) {
       setServerError('Passwords do not match')
+      setLoading(false)
       return
     }
 
     try {
-      
       const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)]
 
       const response = await authService.signup({
@@ -44,6 +46,8 @@ const Signup = () => {
       login(response.user)
     } catch (err) {
       setServerError(err.response?.data?.message[0] || 'Signup failed')
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -72,6 +76,7 @@ const Signup = () => {
             {serverError}
           </div>
         )}
+
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-white/80 mb-1">Username</label>
@@ -138,11 +143,25 @@ const Signup = () => {
                 {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
               </button>
             </div>
-            {errors.confirm_password && <p className="text-red-400 text-sm mt-1">{errors.confirm_password.message}</p>}
+            {errors.password_confirm && <p className="text-red-400 text-sm mt-1">{errors.password_confirm.message}</p>}
           </div>
 
-          <motion.button whileTap={{ scale: 0.98 }} type="submit" className="w-full btn-primary mt-10">
-            Sign Up
+          <motion.button
+            whileTap={{ scale: 0.98 }}
+            type="submit"
+            disabled={loading}
+            className={`w-full btn-primary mt-10 flex items-center justify-center space-x-2 ${
+              loading ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+          >
+            {loading ? (
+              <>
+                <Loader2 className="w-5 h-5 animate-spin" />
+                <span>Signing Up...</span>
+              </>
+            ) : (
+              'Sign Up'
+            )}
           </motion.button>
         </form>
 
@@ -160,3 +179,4 @@ const Signup = () => {
 }
 
 export default Signup
+

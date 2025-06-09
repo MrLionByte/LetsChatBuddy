@@ -13973,3 +13973,23 @@ INFO 2025-06-08 17:43:23,667 server HTTP/2 support not enabled (install the http
 INFO 2025-06-08 17:43:23,667 server Configuring endpoint tcp:port=8000:interface=0.0.0.0
 INFO 2025-06-08 17:43:23,668 server Listening on TCP address 0.0.0.0:8000
 WARNING 2025-06-08 17:45:19,177 log Unauthorized: /api/v1/chat/suggested-friends/
+WARNING 2025-06-08 21:27:47,273 log Not Found: /static/admin/css/base.css
+WARNING 2025-06-08 21:27:47,276 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-08 21:27:47,277 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-08 21:27:47,279 log Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-08 21:27:47,279 log Not Found: /static/admin/js/theme.js
+WARNING 2025-06-08 21:27:47,279 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-08 21:27:47,330 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-08 21:27:47,330 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-08 21:27:47,331 log Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-08 21:27:47,334 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-08 21:27:48,689 log Not Found: /favicon.ico
+WARNING 2025-06-08 21:27:54,895 log Not Found: /static/admin/css/base.css
+WARNING 2025-06-08 21:27:54,896 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-08 21:27:54,896 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-08 21:27:54,898 log Not Found: /static/admin/js/theme.js
+WARNING 2025-06-08 21:27:54,900 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-08 21:27:54,925 log Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-08 21:27:54,925 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-08 21:27:54,927 log Not Found: /static/admin/js/nav_sidebar.js
+INFO 2025-06-08 21:28:02,311 server Killed 0 pending application instances

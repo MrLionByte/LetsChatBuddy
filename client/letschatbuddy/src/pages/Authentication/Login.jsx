@@ -6,19 +6,22 @@ import { motion } from 'framer-motion'
 import { useAuth } from '../../contexts/AuthContext'
 import { authService } from '../../services/apiService'
 import Logo from '../../assets/Logo.svg'
+import { Loader2 } from 'lucide-react' 
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
   const [showPassword, setShowPassword] = useState(false)
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
   const { login } = useAuth()
 
   const onSubmit = async (data) => {
     setError('')
+    setLoading(true)
     try {
       const response = await authService.login(data)
-      
+
       const avatars = ['👤', '👩', '👨', '🧑', '👦', '👧', '🧔', '🧕', '🧙', '🧛']
       const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)]
 
@@ -32,6 +35,8 @@ const Login = () => {
     } catch (err) {
       const message = err?.response?.data?.message[0] || 'Login failed. Check your credentials.'
       setError(message)
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -97,8 +102,22 @@ const Login = () => {
             )}
           </div>
 
-          <motion.button whileTap={{ scale: 0.98 }} type="submit" className="w-full btn-primary mt-6">
-            Sign In
+          <motion.button
+            whileTap={{ scale: 0.98 }}
+            type="submit"
+            disabled={loading}
+            className={`w-full btn-primary mt-6 flex items-center justify-center space-x-2 ${
+              loading ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+          >
+            {loading ? (
+              <>
+                <Loader2 className="w-5 h-5 animate-spin" />
+                <span>Signing In...</span>
+              </>
+            ) : (
+              'Sign In'
+            )}
           </motion.button>
         </form>
 
