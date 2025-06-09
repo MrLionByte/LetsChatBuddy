@@ -100,7 +100,6 @@ const ChatInterface = ({
                   }`}
                 >
                   <p>{message?.text}</p>
-                  <p>{message?.senderId}</p>
                   <span className="text-xs opacity-70 block mt-1">
                     {message.timestamp}
                   </span>
