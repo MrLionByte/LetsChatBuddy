@@ -7,6 +7,7 @@ import LandingPage from './pages/Home/LandingPage';
 import Dashboard from './pages/Dashboard/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
+import NotFound from './pages/NotFound/notFound';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       <Route element={<ProtectedRoute />}>
         <Route path="/app/*" element={<Dashboard />} />
       </Route>
-
+      
+      <Route path="*" element={<NotFound />} />
     </Routes>
   )
 }

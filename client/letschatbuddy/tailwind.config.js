@@ -44,12 +44,19 @@ export default {
           900: '#060508',
         }
       },
-      animation: {
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      },
       backdropBlur: {
         xs: '2px',
-      }
+      },
+      keyframes: {
+        scan: {
+          '0%': { backgroundPosition: '0 -100vh' },
+          '35%, 100%': { backgroundPosition: '0 100vh' },
+        },
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        scan: 'scan 7.5s linear infinite',
+      },
     },
   },
   plugins: [],
