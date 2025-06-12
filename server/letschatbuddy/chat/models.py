@@ -19,6 +19,7 @@ class Interest(models.Model):
         ('accepted', 'Accepted'),
         ('rejected', 'Rejected'),
     ), default='pending')
+    read = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True)
 
     class Meta:

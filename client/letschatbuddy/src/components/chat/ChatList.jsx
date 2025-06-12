@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
+import {formatLastSeen} from '../../utils/formatDate';
 import { MessageCircle } from 'lucide-react'
 import {ChatListSkeleton} from '../loader/ChatSkeleton'
+
 
 const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages, loading }) => {
   
@@ -19,7 +21,7 @@ const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages, loading
   }
 
   return (
-    <div className="space-y-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {activeChats.map((chat, index) => {
         const chatMessages = messages[chat.id] || [];
         const lastMessage = chatMessages.length > 0 ? 
@@ -46,9 +48,9 @@ const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages, loading
                   />
                 </div>
                 
-                <div className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-dark-500 ${
+                {/* <div className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 border-dark-500 ${
                   chat.is_online ? 'bg-green-500' : 'bg-gray-500'
-                }`} />
+                }`} /> */}
               </div>
               <div className="flex-1">
                 <div className="flex justify-between items-start">
@@ -62,7 +64,7 @@ const ChatList = ({ activeChats, onSelectChat, selectedChatId, messages, loading
                 </p>
                 
                 <p className="text-xs text-white/40 mt-1">
-                  {chat.is_online ? 'Online' : `Last seen ${chat.last_seen}`}
+                  {chat.is_online ? 'Online' : `Last seen ${chat.last_seen !== 'Recently'? `${formatLastSeen(chat.last_seen)}`: 'recently'}`}
                 </p>
               </div>
               <div className="text-white/40">

@@ -13,11 +13,13 @@
     "@dicebear/collection": "^9.2.2",
     "@dicebear/core": "^9.2.2",
     "axios": "^1.8.4",
+    "dayjs": "^1.11.13",
     "framer-motion": "^12.9.2",
     "lucide-react": "^0.511.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.56.4",
+    "react-hot-toast": "^2.5.2",
     "react-router-dom": "^7.6.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"

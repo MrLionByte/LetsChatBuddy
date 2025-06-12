@@ -10,6 +10,7 @@ import InterestManagerPage from '../../components/interests/InterestManagerPage'
 import RequestManagerPage from '../../components/requests/RequestManagerPage';
 import { mockUsers } from '../../data/mockData';
 import { avatars } from '../../services/avatars'; 
+import NotificationListener from '../../components/notification/NotificationListener';
 
 
 const Dashboard = () => {
@@ -19,7 +20,17 @@ const Dashboard = () => {
   const [sentInterests, setSentInterests] = useState([]);
   const [receivedInterests, setReceivedInterests] = useState([]);
   const [activeChats, setActiveChats] = useState([]);
+  const [currentUserToken, setCurrentUserToken] = useState(null)
   
+  // useEffect(()=>{
+  //   if(!currentUser){
+  //     const token = localStorage.getItem('token')
+  //     if (token){
+  //         setCurrentUserToken(token)
+  //     }
+  //   }
+  // }, [currentUserToken])
+
   useEffect(() => {
     const path = window.location.pathname.split('/').pop()
     if (path === 'chats') setActiveTab('chats')
@@ -75,6 +86,7 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen gradient-bg">
+      {/* <NotificationListener token={currentUserToken} /> */}
       <Header currentUser={currentUser} />
       
       <div className="max-w-6xl mx-auto p-4 pt-24">

@@ -1,8 +1,29 @@
-import { useEffect } from 'react'
-import { Search } from 'lucide-react'
-import { motion } from 'framer-motion'
-import {useUserDiscovery} from './_lib';
+import { useState } from 'react';
+import { Search } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useUserDiscovery } from './_lib';
 import LoadingSpinner from '../../components/loader/LoadingSpinner';
+
+const ConfirmationModal = ({ isOpen, onClose, onConfirm, user }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+      <div className="border-4 border-primary-600 bg-dark-700 p-6 rounded-xl shadow-xl w-full max-w-sm text-white space-y-4">
+        <h3 className="text-xl font-bold">Confirm Interest</h3>
+        <p>Do you want to send interest to <span className="font-semibold">{user?.username}</span>?</p>
+        <div className="flex justify-center space-x-4 mt-6">
+          <button onClick={onClose} className="px-4 py-2 rounded-lg bg-gray-500 hover:bg-gray-600">
+            Cancel
+          </button>
+          <button onClick={onConfirm} className="px-4 py-2 rounded-lg bg-green-500 hover:bg-green-600">
+            Yes, Send
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
   const {
@@ -11,12 +32,27 @@ const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
     suggestedUsers,
     loading,  
     handleSendInterest,
+    hasMore,
+    loadMore,
   } = useUserDiscovery(currentUser, sentInterests, onSendInterest);
   
-  const filteredUsers = suggestedUsers.filter(
+  const [selectedUser, setSelectedUser] = useState(null);
+
+  const filteredUsers = suggestedUsers?.filter(
     user => user.id !== currentUser.id &&
     user.username?.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleOpenModal = (user) => {
+    setSelectedUser(user);
+  };
+
+  const handleConfirmSend = () => {
+    if (selectedUser) {
+      handleSendInterest(selectedUser);
+      setSelectedUser(null);
+    }
+  };
 
   return (
     <div className="space-y-6">
@@ -40,13 +76,13 @@ const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
           <div className="col-span-2 flex justify-center items-center py-12">
             <LoadingSpinner size="large" text="Finding people for you..." />
           </div>
-        ) : filteredUsers.length > 0 ? (
+        ) : filteredUsers?.length > 0 ? (
           filteredUsers.map((user, index) => (
             <UserCard 
               key={user.id}
               user={user}
               index={index}
-              onSendInterest={() => handleSendInterest(user)}
+              onSendInterest={() => handleOpenModal(user)}
               isInterestSent={sentInterests.includes(user.id)}
             />
           ))
@@ -61,8 +97,26 @@ const UserDiscoveryPage = ({ currentUser, sentInterests, onSendInterest }) => {
         )}
       </div>
 
+      {hasMore && (
+        <div className="flex justify-center mt-4">
+          <button 
+            onClick={loadMore} 
+            className="px-6 py-3 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-semibold transition-all"
+            disabled={loading}
+          >
+            {loading ? 'Loading...' : 'Load More'}
+          </button>
+        </div>
+      )}
+
+      <ConfirmationModal
+        isOpen={!!selectedUser}
+        onClose={() => setSelectedUser(null)}
+        onConfirm={handleConfirmSend}
+        user={selectedUser}
+      />
     </div>
-  )
+  );
 }
 
 const UserCard = ({ user, index, onSendInterest, isInterestSent }) => {
@@ -117,6 +171,6 @@ const UserCard = ({ user, index, onSendInterest, isInterestSent }) => {
       </div>
     </motion.div>
   )
-}
+};
 
 export default UserDiscoveryPage;

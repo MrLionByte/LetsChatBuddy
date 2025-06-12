@@ -1,7 +1,29 @@
+import { useState } from 'react';
 import { Heart, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInterests } from './_lib';
 import LoadingSpinner from '../../components/loader/LoadingSpinner';
+
+const ConfirmationModal = ({ isOpen, onClose, onConfirm, message }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+      <div className="border-4 border-primary-600 bg-dark-700 p-6 rounded-xl shadow-xl w-full max-w-sm text-white space-y-4">
+        <h3 className="text-xl font-bold">Confirmation</h3>
+        <p>{message}</p>
+        <div className="flex justify-center space-x-4 mt-6">
+          <button onClick={onClose} className="px-4 py-2 rounded-lg bg-gray-500 hover:bg-gray-600">
+            Cancel
+          </button>
+          <button onClick={onConfirm} className="px-4 py-2 rounded-lg bg-green-500 hover:bg-green-600">
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const ReceivedInterestRequests = ({ onAcceptInterest, onRejectInterest }) => {
   const {
@@ -10,6 +32,26 @@ const ReceivedInterestRequests = ({ onAcceptInterest, onRejectInterest }) => {
     handleRejectInterest,
     loading
   } = useInterests(onAcceptInterest, onRejectInterest);
+
+  const [selectedInterest, setSelectedInterest] = useState(null);
+  const [actionType, setActionType] = useState(null);
+
+  const openModal = (interest, type) => {
+    setSelectedInterest(interest);
+    setActionType(type);
+  };
+
+  const handleConfirm = () => {
+    if (selectedInterest && actionType) {
+      if (actionType === 'accept') {
+        handleAcceptInterest(selectedInterest.id);
+      } else if (actionType === 'reject') {
+        handleRejectInterest(selectedInterest.id);
+      }
+      setSelectedInterest(null);
+      setActionType(null);
+    }
+  };
 
   return (
     <div>
@@ -61,7 +103,7 @@ const ReceivedInterestRequests = ({ onAcceptInterest, onRejectInterest }) => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => handleRejectInterest(interest.id)}
+                    onClick={() => openModal(interest, 'reject')}
                     className="p-3 bg-red-600/20 hover:bg-red-600/30 text-red-400 rounded-xl transition-all duration-300"
                   >
                     <X className="w-5 h-5" />
@@ -69,7 +111,7 @@ const ReceivedInterestRequests = ({ onAcceptInterest, onRejectInterest }) => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => handleAcceptInterest(interest.id)}
+                    onClick={() => openModal(interest, 'accept')}
                     className="p-3 bg-green-600/20 hover:bg-green-600/30 text-green-400 rounded-xl transition-all duration-300"
                   >
                     <Heart className="w-5 h-5" />
@@ -80,6 +122,17 @@ const ReceivedInterestRequests = ({ onAcceptInterest, onRejectInterest }) => {
           ))
         )}
       </div>
+
+      <ConfirmationModal
+        isOpen={!!selectedInterest}
+        onClose={() => { setSelectedInterest(null); setActionType(null); }}
+        onConfirm={handleConfirm}
+        message={
+          actionType === 'accept'
+            ? `Do you want to accept ${selectedInterest?.sender?.username}'s request?`
+            : `Do you want to reject ${selectedInterest?.sender?.username}'s request?`
+        }
+      />
     </div>
   );
 };

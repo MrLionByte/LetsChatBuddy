@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Send, ArrowLeft } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { ChatMessagesSkeleton } from '../loader/ChatSkeleton'
+import {formatLastSeen} from '../../utils/formatDate';
 
 const ChatInterface = ({
   activeChat, 
@@ -41,12 +42,16 @@ const ChatInterface = ({
     <div className="flex flex-col h-[70vh] md:h-[60vh] -m-6">
      
       <div className="bg-dark-400/50 backdrop-blur-sm border-b border-dark-400/50 p-4 flex items-center space-x-4">
-        <button
+        <motion.button
           onClick={onBackToChats}
-          className="text-white/60 hover:text-white transition-colors md:hidden"
+          className="text-white/60 hover:text-white transition-colors"
+          whileHover={{
+            x: [0, -5, 5, -3, 3, 0],
+            transition: { duration: 0.8 }
+          }}
         >
           <ArrowLeft className="w-5 h-5" />
-        </button>
+        </motion.button>
         <div className="relative">
           <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
             <img 
@@ -55,15 +60,22 @@ const ChatInterface = ({
               className="w-full h-full rounded-full object-cover"
             />
           </div>
-          {/* <div className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-dark-500 ${
+          <div className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-dark-500 ${
             activeChat.is_online ? 'bg-green-500' : 'bg-gray-500'
-          }`} /> */}
+          }`} />
         </div>
         <div>
           <h3 className="text-white font-semibold">{activeChat.username}</h3>
-          {/* <p className="text-white/60 text-sm">
-            {activeChat.is_online ? 'Online' : `Last seen ${activeChat.last_seen}`}
-          </p> */}
+          <p className="text-white/60 text-sm">
+            {activeChat.is_online ? (
+              <span className="flex items-center gap-1">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Online
+              </span>
+            ) : (
+              `Last seen ${formatLastSeen(activeChat.last_seen)}`
+            )}
+          </p>
         </div>
       </div>
 
@@ -83,8 +95,6 @@ const ChatInterface = ({
             </div>
           ) : (
             messages.map((message, index) => (
-              
-              
               <motion.div
                 key={message.id}
                 initial={{ opacity: 0, y: 10 }}

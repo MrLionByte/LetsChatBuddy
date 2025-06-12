@@ -1,4 +1,4 @@
-import { Heart, Loader } from 'lucide-react';
+import { Heart, Loader,CheckCircle,XCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useSentInterests } from './_lib';
 import LoadingSpinner from '../../components/loader/LoadingSpinner';
@@ -32,6 +32,34 @@ const InterestManagerPage = () => {
 };
 
 const InterestCard = ({ interest, index }) => {
+  const getStatusComponent = () => {
+    if (interest.status === 'pending') {
+      return (
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="p-3 bg-yellow-600/20 hover:bg-yellow-600/30 text-yellow-400 rounded-xl transition-all duration-300"
+        >
+          <Loader className="w-5 h-5 animate-spin" />
+        </motion.button>
+      );
+    } else if (interest.status === 'accepted') {
+      return (
+        <div className="flex items-center space-x-2 p-2 bg-green-600/20 rounded-xl">
+          <CheckCircle className="text-green-400 w-5 h-5" />
+          <span className="text-green-400 font-semibold text-sm">Accepted</span>
+        </div>
+      );
+    } else if (interest.status === 'rejected') {
+      return (
+        <div className="flex items-center space-x-2 p-2 bg-red-600/20 rounded-xl">
+          <XCircle className="text-red-400 w-5 h-5" />
+          <span className="text-red-400 font-semibold text-sm">Rejected</span>
+        </div>
+      );
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -50,7 +78,11 @@ const InterestCard = ({ interest, index }) => {
             <h3 className="text-white font-semibold text-lg">
               {interest?.receiver?.username}
             </h3>
-            <p className="text-white/60">Waiting for them to accept</p>
+            <p className="text-white/60">
+              {interest.status === 'pending' ? 'Waiting for them to accept' :
+               interest.status === 'accepted' ? 'They have accepted your interest' :
+               'They have rejected your interest'}
+            </p>
             <span className="text-xs text-primary-400">
               {new Date(interest?.timestamp).toLocaleString([], {
                 day: '2-digit',
@@ -64,13 +96,7 @@ const InterestCard = ({ interest, index }) => {
         </div>
 
         <div className="flex space-x-3">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="p-3 bg-green-600/20 hover:bg-green-600/30 text-green-400 rounded-xl transition-all duration-300"
-          >
-            <Loader className="w-5 h-5 animate-spin" />
-          </motion.button>
+          {getStatusComponent()}
         </div>
       </div>
     </motion.div>

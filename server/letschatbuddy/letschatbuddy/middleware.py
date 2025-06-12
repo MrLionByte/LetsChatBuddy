@@ -5,6 +5,7 @@ from django.db import close_old_connections
 from rest_framework.exceptions import AuthenticationFailed
 from django.core.exceptions import PermissionDenied
 from django.utils.functional import SimpleLazyObject
+from urllib.parse import parse_qs
 from .authentication import JWTAuthentication
 from .user_utils import get_user
 
@@ -17,8 +18,8 @@ class ChatWebsocketMiddleware(BaseMiddleware):
         close_old_connections()
         
         query_string = scope.get("query_string", b"").decode("utf-8")
-        query_params = dict(q.split('=') for q in query_string.split("&") if "=" in q)
-        token = query_params.get("token")
+        query_params = parse_qs(query_string)
+        token = query_params.get("token", [None])[0]
         
         if not token:
             await self.close_connection(send, 4000, "Token missing")

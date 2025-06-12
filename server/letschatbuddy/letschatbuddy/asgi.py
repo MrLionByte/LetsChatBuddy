@@ -18,11 +18,12 @@ from django.conf import settings
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'letschatbuddy.settings')
 django.setup()
 
-from chat.routing import websocket_urlpatterns
+from chat.routing import websocket_urlpatterns as chat_urls
+from notifications.routing import websocket_urlpatterns as notify_urls
 from .middleware  import ChatWebsocketMiddleware
 
 django_asgi_app = get_asgi_application()
-
+websocket_urlpatterns = chat_urls + notify_urls
 
 application = ProtocolTypeRouter({
     "http": django_asgi_app,

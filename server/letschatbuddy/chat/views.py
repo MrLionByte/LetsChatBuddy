@@ -1,6 +1,7 @@
 import logging
 from django.contrib.auth import login, logout
 from rest_framework import generics, permissions, status, views
+from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.token_blacklist.models import BlacklistedToken, OutstandingToken
@@ -10,6 +11,9 @@ from rest_framework.exceptions import ValidationError
 from django.db.models import Q, F, Value, Case, When
 
 from accounts.models import CustomUser
+
+from notifications.services import send_notification_to_user
+
 from .models import (
     Interest,
     Message
@@ -27,46 +31,36 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 
 
-class NonSuperuserQuerysetMixin:
-    def get_queryset(self):
-        return super().get_queryset().filter(is_superuser=False)
+class SuggestedFriendsPagination(PageNumberPagination):
+    page_size = 20
+    page_size_query_param = 'page_size'
+    max_page_size = 50
 
 
 class SuggestedFriendsAPIView(generics.ListAPIView):
     
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = UserSuggestionSerializer
+    pagination_class = SuggestedFriendsPagination
 
     def get_queryset(self):
         user = self.request.user
-        search_term = self.request.query_params.get('search', '').strip()
-        exclude_ids = self.request.query_params.get('exclude_ids', '')
+        sent_interests = Interest.objects.filter(sender=user).values_list('receiver_id', flat=True)
+        received_interests = Interest.objects.filter(receiver=user).values_list('sender_id', flat=True)
+        superuser_ids = list(CustomUser.objects.filter(is_superuser=True).values_list('id', flat=True))
 
-        exclude_ids = [int(id) for id in exclude_ids.split(',') if id.isdigit()] if exclude_ids else []
-        exclude_ids.append(user.id)
-        
-        interests_queryset = Interest.objects.filter(
-            Q(sender=user) | Q(receiver=user)
-        ).values_list('receiver_id', 'sender_id')
-        
-        connected_ids = set()
-        for sender_id, receiver_id in interests_queryset:
-            connected_ids.update([sender_id, receiver_id])
-        
-        exclude_ids += list(connected_ids)
-        
-        queryset = CustomUser.objects.filter(
-            is_superuser=False).exclude(
-                id__in=exclude_ids)
-            
-        if search_term:
-            queryset = queryset.filter(
-                Q(username__icontains=search_term) | 
-                Q(email__icontains=search_term)
-            )
-        
-        return queryset.order_by('?')[:30]
-                    
+        exclude_ids = set(sent_interests)
+        exclude_ids.update(received_interests, superuser_ids)
+        exclude_ids.add(user.id)    
+
+        queryset = CustomUser.objects.exclude(id__in=exclude_ids)
+
+        search = self.request.query_params.get('search')
+        if search:
+            queryset = queryset.filter(username__icontains=search)
+
+        return queryset.order_by('?')
+                        
                     
 class InterestCreateAPIView(generics.CreateAPIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -95,13 +89,19 @@ class InterestSentListAPIView(generics.ListAPIView):
     def get_queryset(self):
         user = self.request.user
         return Interest.objects.filter(
-            sender=user,
-            status='pending').order_by(
+            sender=user, read=False).order_by(
                 '-timestamp')
     
     def list(self, request, *args, **kwargs):
         queryset = self.get_queryset()
+        for i in queryset:
+            print(f"{i.id}, sender {i.sender.username} -> receiver {i.receiver.username} {i.status}, {i.read}")
+
         serializer = self.get_serializer(queryset, many=True)
+
+        qu11eryset.filter(read=False).exclude(status='pending').update(read=True)
+        for i in queryset:
+            print(f"{i.id}, sender {i.sender.username} -> receiver {i.receiver.username} {i.status}, {i.read}")
         return Response(serializer.data)
     
     
@@ -141,7 +141,7 @@ class InterestActionAPIView(views.APIView):
         if action == 'accept':
             interest.status = 'accepted'
         elif action == 'reject':
-            interest.status = 'rejected'
+            interest.status = 'rejected'        
         else:
             raise ValidationError("Invalid action. Use 'accept' or 'reject'.")
 
@@ -171,3 +171,8 @@ class ChatRoomListAPIView(generics.ListAPIView):
         return CustomUser.objects.filter(id__in=connected_user_ids)
 
 
+    # def list(self, request, *args, **kwargs):
+    #     queryset = self.get_queryset()
+    #     serializer = self.get_serializer(queryset, many=True)
+    #     return Response(serializer.data)
+    

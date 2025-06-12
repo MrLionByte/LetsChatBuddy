@@ -15,16 +15,11 @@ logger = logging.getLogger(__name__)
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
+    global_status_group = "global_user_status"
     
     async def connect(self) -> None:
         try:
             self.user = self.scope['user']
-            
-            if not self.user.is_authenticated:
-                logger.warning("User is not authenticated.")
-                await self.close()
-                return
-            
             self.other_user_id = self.scope['url_route']['kwargs'].get('user_id')
 
             if not self.other_user_id:
@@ -36,21 +31,20 @@ class ChatConsumer(AsyncWebsocketConsumer):
             self.room_name = f"{sorted_user_ids[0]}_{sorted_user_ids[1]}"
             self.room_group_name = f"chat_{self.room_name}"
 
-            self.user_status_group = f"user_status_{self.user.id}"
-            
             await self.channel_layer.group_add(
                 self.room_group_name,
                 self.channel_name
-            )
-            
+                )
             await self.channel_layer.group_add(
-                self.user_status_group,
+                self.global_status_group,
                 self.channel_name
-            )
-            
+                )
+
             await self.accept()
-            await self.set_user_online_status(True)
             
+            await self.set_user_online_status(True)
+            await self.broadcast_user_status()
+
             try:
                 last_messages = await get_last_messages(self.room_name)
             except Exception as e:
@@ -63,8 +57,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
             }))
         
         except Exception as e:
-            import traceback
-            traceback.print_exc()
             logger.exception(f"Error in connect method: {str(e)}")
             await self.close()
             
@@ -73,19 +65,16 @@ class ChatConsumer(AsyncWebsocketConsumer):
         try:
             
             await self.set_user_online_status(False)
+            await self.broadcast_user_status()
             
             await self.channel_layer.group_discard(
                 self.room_group_name,
                 self.channel_name
-            )
-            
+                )
             await self.channel_layer.group_discard(
-                self.user_status_group,
+                self.global_status_group, 
                 self.channel_name
-            )
-            
-            await self.broadcast_user_status()
-
+                )
             
         except Exception as e:
             logger.error(f"Disconnect error: {str(e)}")
@@ -101,7 +90,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
             cache.set(cache_key, True, timeout=300) # for 5 minutes timeout
         else:
             cache.delete(cache_key)
-            
             self.user.last_seen = now()
             self.user.save(update_fields=['last_seen'])
     
@@ -109,20 +97,26 @@ class ChatConsumer(AsyncWebsocketConsumer):
     @database_sync_to_async
     def get_user_online_status(self, user_id):
         """Get user's online status from cache"""
-        cache_key = f"user_online_{user_id}"
         
+        cache_key = f"user_online_{user_id}"
         status = cache.get(cache_key, False)
         return status
     
     
     async def broadcast_user_status(self):
         """Broadcast user's online status to relevant users"""
+        
         try:
             is_online = await self.get_user_online_status(self.user.id)
-            last_seen = self.user.last_seen.isoformat() if hasattr(self.user, 'last_seen') else None
+            last_seen = None
+            
+            if not is_online:
+                await database_sync_to_async(
+                    self.user.refresh_from_db)()
+                last_seen = self.user.last_seen.isoformat() if self.user.last_seen else None
 
             await self.channel_layer.group_send(
-                self.room_group_name,
+                self.global_status_group,
                 {
                     'type': 'user_status_update',
                     'user_id': self.user.id,
@@ -130,6 +124,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
                     'last_seen': last_seen
                 }
             )
+            
         except Exception as e:
             logger.error(f"Error broadcasting user status: {str(e)}")
             
@@ -223,14 +218,16 @@ class ChatConsumer(AsyncWebsocketConsumer):
     async def user_status_update(self, event):
         """Send user status update to WebSocket"""
         try:
-            await self.send(text_data=json.dumps({
-                "type": "user_status",
-                "user_id": event['user_id'],
-                "is_online": event['is_online'],
-                "last_seen": event['last_seen']
-            }))
+            if event['user_id'] != self.user.id:    
+                await self.send(text_data=json.dumps({
+                    "type": "user_status",
+                    "user_id": event['user_id'],
+                    "is_online": event['is_online'],
+                    "last_seen": event['last_seen']
+                }))
         except Exception as e:
             logger.error(f"Error sending user status update: {str(e)}")
+    
     
     async def typing_status(self, event):
         """Send typing status to WebSocket"""

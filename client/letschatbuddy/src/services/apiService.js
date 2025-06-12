@@ -20,8 +20,11 @@ export const authService = {
 };
 
 export const chatService = {
-    getSuggestedFriends: async (queryString = '') => {
-        const url = queryString ? `${API_ENDPOINTS.chat.suggestedFriends}?${queryString}` : API_ENDPOINTS.chat.suggestedFriends;
+    getSuggestedFriends: async (queryString='', page=1) => {
+        const url = queryString 
+            ? `${API_ENDPOINTS.chat.suggestedFriends}?${queryString}&page=${page}`
+            : `${API_ENDPOINTS.chat.suggestedFriends}?page=${page}`;
+        
         const response = await api.get(url);
         return response.data;
     },

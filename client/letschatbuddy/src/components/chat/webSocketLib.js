@@ -1,7 +1,6 @@
 // Enhanced webSocketLib.js
 let socket = null;
 const messageHandlers = new Set();
-const notificationHandlers = new Set();
 const connectionHandlers = new Set();
 let reconnectAttempts = 0;
 const MAX_RECONNECTS = 5;
@@ -58,9 +57,6 @@ export const initializeWebSocket = (otherUserId, token) => {
           last_seen: data.last_seen
         }));
       }
-      else if (data.type === 'notification') {
-        notificationHandlers.forEach((h) => h(data.notification));
-      }
     } catch (err) {
       // console.error('WebSocket message parsing error:', err);
     }
@@ -110,11 +106,6 @@ export const sendTypingStatus = (isTyping) => {
 export const registerMessageHandler = (handler) => {
   messageHandlers.add(handler);
   return () => messageHandlers.delete(handler);
-};
-
-export const registerNotificationHandler = (handler) => {
-  notificationHandlers.add(handler);
-  return () => notificationHandlers.delete(handler);
 };
 
 export const registerConnectionHandler = (handler) => {

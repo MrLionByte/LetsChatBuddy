@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     
     'accounts',
     'chat',
+    'notifications',
     
     'rest_framework',
     'rest_framework_simplejwt',
@@ -95,7 +96,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-    ],
+    ],  
 }
 
 ASGI_APPLICATION = "letschatbuddy.asgi.application"

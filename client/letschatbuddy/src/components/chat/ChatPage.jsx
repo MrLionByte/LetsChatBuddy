@@ -29,7 +29,8 @@ const ChatPage = () => {
 
   const [loadingMessages, setLoadingMessages] = useState(false);
   const [onlineUsers, setOnlineUsers] = useState(new Set());
-
+  console.log(onlineUsers);
+  
   const { logout } = useAuth();
 
   const updateUserOnlineStatus = (userId, isOnline, lastSeen = null) => {
@@ -55,7 +56,6 @@ const ChatPage = () => {
       });
     }
   };
-
 
   const fetchChatHistory = async () => {
 
@@ -243,7 +243,7 @@ const ChatPage = () => {
   };
 
   return (
-    <div>
+    <div >
       <h2 className="text-2xl font-bold text-white mb-6">
         {selectedChatId ? 'Chat' : 'Conversations'}
       </h2>

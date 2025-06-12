@@ -14,7 +14,7 @@ class UserSuggestionSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = CustomUser
-        fields = ['id', 'username', 'email', 'avatar']
+        fields = ['id', 'username', 'email', 'avatar', 'last_seen']
         
 
 class InterestSendSerializer(serializers.ModelSerializer):
@@ -40,6 +40,4 @@ class ChatRoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Interest
         fields = ['id','sender', 'receiver', 'status', 'timestamp']
-    
-
     
