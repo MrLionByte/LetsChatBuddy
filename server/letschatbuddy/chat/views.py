@@ -171,8 +171,3 @@ class ChatRoomListAPIView(generics.ListAPIView):
         return CustomUser.objects.filter(id__in=connected_user_ids)
 
 
-    # def list(self, request, *args, **kwargs):
-    #     queryset = self.get_queryset()
-    #     serializer = self.get_serializer(queryset, many=True)
-    #     return Response(serializer.data)
-    

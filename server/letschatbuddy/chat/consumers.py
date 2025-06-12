@@ -30,13 +30,20 @@ class ChatConsumer(AsyncWebsocketConsumer):
             sorted_user_ids = sorted([self.user.id, int(self.other_user_id)])
             self.room_name = f"{sorted_user_ids[0]}_{sorted_user_ids[1]}"
             self.room_group_name = f"chat_{self.room_name}"
-
+            
+            # subscribe to chat room group
             await self.channel_layer.group_add(
                 self.room_group_name,
                 self.channel_name
                 )
+            
+            # subscribe to status group
             await self.channel_layer.group_add(
                 self.global_status_group,
+                self.channel_name
+                )
+            await self.channel_layer.group_add(
+                'online_users_group',
                 self.channel_name
                 )
 
@@ -45,6 +52,13 @@ class ChatConsumer(AsyncWebsocketConsumer):
             await self.set_user_online_status(True)
             await self.broadcast_user_status()
 
+            await self.channel_layer.group_send('online_users_group', {
+                'type': 'user_status_broadcast',
+                'user_id': self.user.id,
+                'is_online': True,
+                'last_seen': None
+            })
+            
             try:
                 last_messages = await get_last_messages(self.room_name)
             except Exception as e:
@@ -75,7 +89,13 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 self.global_status_group, 
                 self.channel_name
                 )
-            
+            await self.channel_layer.group_send('online_users_group', {
+                'type': 'user_status_broadcast',
+                'user_id': self.user.id,
+                'is_online': False,
+                'last_seen': str(timezone.now())
+            })
+
         except Exception as e:
             logger.error(f"Disconnect error: {str(e)}")
             await self.close(close_code)
@@ -173,6 +193,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 }
             }
             
+            # message to user-to-user chat room
             await self.channel_layer.group_send(
                 self.room_group_name,
                 {
@@ -218,8 +239,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
     async def user_status_update(self, event):
         """Send user status update to WebSocket"""
         try:
-            if event['user_id'] != self.user.id:    
-                await self.send(text_data=json.dumps({
+            await self.send(text_data=json.dumps({
                     "type": "user_status",
                     "user_id": event['user_id'],
                     "is_online": event['is_online'],
@@ -241,4 +261,12 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 }))
         except Exception as e:
             logger.error(f"Error sending typing status: {str(e)}")
-            
+    
+    
+    async def user_status_broadcast(self, event):
+        await self.send(text_data=json.dumps({
+            'type': 'user_status',
+            'user_id': event['user_id'],
+            'is_online': event['is_online'],
+            'last_seen': event['last_seen'],
+        }))

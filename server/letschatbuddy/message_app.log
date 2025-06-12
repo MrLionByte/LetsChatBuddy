@@ -16672,3 +16672,162 @@ WARNING 2025-06-12 16:59:23,279 server Application instance <Task pending name='
 WARNING 2025-06-12 16:59:23,279 server Application instance <Task pending name='Task-223' coro=<ProtocolTypeRouter.__call__() running at /home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/channels/routing.py:48> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/lib64/python3.13/asyncio/tasks.py:975, Task.task_wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 33142] path=b'/ws/chat/2/'> took too long to shut down and was killed.
 WARNING 2025-06-12 16:59:23,279 server Application instance <Task pending name='Task-224' coro=<ProtocolTypeRouter.__call__() running at /home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/channels/routing.py:48> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/lib64/python3.13/asyncio/tasks.py:975, Task.task_wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 38174] path=b'/ws/chat/6/'> took too long to shut down and was killed.
 WARNING 2025-06-12 16:59:23,279 server Application instance <Task pending name='Task-225' coro=<ProtocolTypeRouter.__call__() running at /home/mrlionbyte/Project/BW2/server/.venv/lib64/python3.13/site-packages/channels/routing.py:48> wait_for=<Future pending cb=[shield.<locals>._outer_done_callback() at /usr/lib64/python3.13/asyncio/tasks.py:975, Task.task_wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 38176] path=b'/ws/chat/2/'> took too long to shut down and was killed.
+ERROR 2025-06-12 17:18:28,615 middleware An unexpected error occurred: SSL SYSCALL error: EOF detected
+
+ERROR 2025-06-12 17:18:29,311 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:18:30,073 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:18:30,309 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:00,281 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:00,324 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:04,959 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:05,309 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:05,706 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:06,183 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:06,310 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:06,865 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:07,310 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:22,515 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:23,313 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:32,435 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:33,315 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:34,622 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:35,325 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:48,947 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:49,381 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:50,231 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:50,418 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:52,076 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:19:52,498 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:11,778 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:12,823 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:14,613 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:14,768 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:18,652 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:20,876 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:30,400 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:20:33,757 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:02,148 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:02,311 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:02,675 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:02,871 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:03,290 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:03,354 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:03,656 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:03,756 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:03,963 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:04,306 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:04,531 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:04,843 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:05,109 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:05,339 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:05,389 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:05,589 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:06,317 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:06,348 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:07,313 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:09,319 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:10,316 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:23:11,363 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:45:32,203 middleware An unexpected error occurred: connection already closed
+ERROR 2025-06-12 17:45:50,068 middleware An unexpected error occurred: connection already closed
+INFO 2025-06-12 17:46:35,737 server Killed 0 pending application instances
+INFO 2025-06-12 17:46:37,310 cli Starting server at tcp:port=8000:interface=localhost
+INFO 2025-06-12 17:46:37,310 server HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-06-12 17:46:37,311 server Configuring endpoint tcp:port=8000:interface=localhost
+INFO 2025-06-12 17:46:37,311 server Listening on TCP address 127.0.0.1:8000
+WARNING 2025-06-12 17:58:26,324 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:26,324 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:26,645 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:26,645 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:27,374 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:27,374 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:27,419 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:27,419 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:28,000 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:28,000 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:28,353 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:28,353 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:28,763 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:28,763 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:29,340 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:29,341 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:30,772 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:30,772 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:32,296 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:32,296 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:34,785 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:34,785 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:37,295 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:37,295 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:41,451 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:41,451 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:41,691 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:41,691 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:42,331 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:42,331 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:43,752 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:43,752 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:45,235 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:45,235 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:45,301 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:45,301 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:45,345 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:45,345 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:47,186 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:47,186 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:47,339 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:47,339 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:49,372 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:49,372 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:50,348 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:50,348 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:53,940 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:53,940 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:58:55,395 authentication JWT token has expired.
+ERROR 2025-06-12 17:58:55,396 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:03,805 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:03,806 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:04,517 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:04,517 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:10,642 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:10,642 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:11,250 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:11,250 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:13,464 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:13,464 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:13,762 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:13,762 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:18,147 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:18,147 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:18,544 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:18,544 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:24,005 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:24,005 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:26,464 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:26,464 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:35,110 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:35,110 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:38,602 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:38,602 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:49,953 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:49,953 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:50,365 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:50,365 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:53,663 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:53,664 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:54,332 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:54,332 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:57,628 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:57,628 middleware Permission denied: Token has expired
+WARNING 2025-06-12 17:59:59,870 authentication JWT token has expired.
+ERROR 2025-06-12 17:59:59,870 middleware Permission denied: Token has expired
+WARNING 2025-06-12 18:00:04,486 authentication JWT token has expired.
+ERROR 2025-06-12 18:00:04,486 middleware Permission denied: Token has expired
+WARNING 2025-06-12 18:00:05,752 authentication JWT token has expired.
+ERROR 2025-06-12 18:00:05,752 middleware Permission denied: Token has expired
+WARNING 2025-06-12 18:00:16,291 authentication JWT token has expired.
+ERROR 2025-06-12 18:00:16,292 middleware Permission denied: Token has expired
+WARNING 2025-06-12 18:00:18,514 authentication JWT token has expired.
+ERROR 2025-06-12 18:00:18,514 middleware Permission denied: Token has expired
+WARNING 2025-06-12 18:00:29,300 authentication JWT token has expired.
+ERROR 2025-06-12 18:00:29,300 middleware Permission denied: Token has expired

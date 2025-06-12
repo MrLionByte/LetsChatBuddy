@@ -48,6 +48,7 @@ const ChatPage = () => {
 
     if (isOnline) {
       setOnlineUsers(prev => new Set([...prev, userId]));
+  
     } else {
       setOnlineUsers(prev => {
         const newSet = new Set(prev);
@@ -176,6 +177,7 @@ const ChatPage = () => {
         }));
         
         setLoadingMessages(false);
+        
       } else if (messageData.type === 'user_status') {
         const { user_id, is_online, last_seen } = messageData;
         updateUserOnlineStatus(user_id, is_online, last_seen);

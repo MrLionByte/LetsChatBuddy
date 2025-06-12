@@ -1,3 +1,7 @@
+import api from "../../api/axiosConfig";
+import API_ENDPOINTS from "../../services/apiEndpoints";
+
+
 // Enhanced webSocketLib.js
 let socket = null;
 const messageHandlers = new Set();
@@ -7,7 +11,8 @@ const MAX_RECONNECTS = 5;
 let currentChatId = null;
 let currentToken = null;
 
-export const initializeWebSocket = (otherUserId, token) => {
+export async function initializeWebSocket (otherUserId) {
+  const token = await getValidAccessToken();
   if (socket) {
     socket.onopen = null;
     socket.onmessage = null;
@@ -125,3 +130,24 @@ export const closeWebSocket = () => {
 export const getConnectionState = () => {
   return socket?.readyState || WebSocket.CLOSED;
 };
+
+
+async function getValidAccessToken() {
+  const token = localStorage.getItem('token');
+
+  if (!isTokenExpired(token)) {
+    return token;
+  }
+
+  const response = await api.post(API_ENDPOINTS.auth.refreshToken);
+  const newToken = response.data.access;
+  localStorage.setItem('token', newToken);
+  return newToken;
+}
+
+function isTokenExpired(token) {
+  if (!token) return true;
+  const payload = JSON.parse(atob(token.split('.')[1]));
+  const exp = payload.exp * 1000;
+  return Date.now() >= exp;
+}
