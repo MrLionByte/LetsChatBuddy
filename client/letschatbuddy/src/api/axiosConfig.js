@@ -63,7 +63,6 @@ api.interceptors.response.use(
         return api(originalRequest);
       }
     } catch (refreshError) {
-      console.error('Token refresh failed:', refreshError);
       localStorage.removeItem('token');
       localStorage.removeItem('user');
       window.location.href = '/login';

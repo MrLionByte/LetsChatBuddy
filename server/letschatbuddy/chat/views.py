@@ -93,15 +93,10 @@ class InterestSentListAPIView(generics.ListAPIView):
                 '-timestamp')
     
     def list(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        for i in queryset:
-            print(f"{i.id}, sender {i.sender.username} -> receiver {i.receiver.username} {i.status}, {i.read}")
-
+        queryset = self.get_queryset()            
         serializer = self.get_serializer(queryset, many=True)
-
-        qu11eryset.filter(read=False).exclude(status='pending').update(read=True)
-        for i in queryset:
-            print(f"{i.id}, sender {i.sender.username} -> receiver {i.receiver.username} {i.status}, {i.read}")
+        queryset.filter(read=False).exclude(status='pending').update(read=True)
+        
         return Response(serializer.data)
     
     

@@ -22,11 +22,10 @@ export const useChatList = () => {
         is_online: chat.is_online || false,
         last_seen: chat.last_seen || 'Recently'
       }));
-      console.log(chatsWithStatus);
       
       setActiveChats(chatsWithStatus);
     } catch (err) {
-      console.error('Error fetching active chats:', err);
+      // console.error('Error fetching active chats:', err);
       setActiveChats([]);
     } finally {
       setLoading(false);

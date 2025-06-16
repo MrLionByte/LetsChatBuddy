@@ -15,7 +15,7 @@ export const useInterests = (onAcceptInterest, onRejectInterest) => {
 
             setReceivedInterests(data);
         } catch (err) {
-            console.error('Error fetching received interests:', err);
+            // console.error('Error fetching received interests:', err);
         } finally {
             setLoading(false);
             setFetchFromBackend(false);
@@ -31,7 +31,7 @@ export const useInterests = (onAcceptInterest, onRejectInterest) => {
             );
             onAcceptInterest(interestId)
         } catch (err) {
-            console.error('Error accepting interest:', err);
+            // console.error('Error accepting interest:', err);
         } finally {
             setLoading(false);
         }
@@ -46,7 +46,7 @@ export const useInterests = (onAcceptInterest, onRejectInterest) => {
             );
             onRejectInterest(interestId)
         } catch (err) {
-            console.error('Error accepting interest:', err);
+            // console.error('Error accepting interest:', err);
         } finally {
             setLoading(false);
         }

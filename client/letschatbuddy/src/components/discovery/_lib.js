@@ -21,7 +21,6 @@ export const useUserDiscovery = (currentUser, sentInterests, onSendInterest) => 
             if (excludeIds.length) params.append('exclude_ids', excludeIds.join(','));
 
             const data = await chatService.getSuggestedFriends(params.toString(), page);
-            console.log(data);
             
             const newUsers = page === 1 ? data.results : [...suggestedUsers, ...data.results];
 
@@ -34,7 +33,7 @@ export const useUserDiscovery = (currentUser, sentInterests, onSendInterest) => 
                 saveSuggestedFriends(data);
             }
         } catch (err) {
-            console.error('Error fetching suggested friends:', err);
+            // console.error('Error fetching suggested friends:', err);
         } finally {
             setLoading(false);
             setFetchFromBackend(false);
@@ -58,7 +57,7 @@ export const useUserDiscovery = (currentUser, sentInterests, onSendInterest) => 
                 return filtered;
             });
         } catch (error) {
-            console.error('Error sending interest:', error);
+            // console.error('Error sending interest:', error);
         }
     };
 

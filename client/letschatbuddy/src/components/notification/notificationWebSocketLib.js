@@ -34,7 +34,7 @@ export const initializeNotificationWebSocket = (token) => {
     };
     
     notificationSocket.onerror = (err) => {
-        console.error('Notification WebSocket error:', err);
+        // console.error('Notification WebSocket error:', err);
     };
 }
 

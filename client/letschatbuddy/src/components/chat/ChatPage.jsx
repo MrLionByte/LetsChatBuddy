@@ -29,8 +29,7 @@ const ChatPage = () => {
 
   const [loadingMessages, setLoadingMessages] = useState(false);
   const [onlineUsers, setOnlineUsers] = useState(new Set());
-  console.log(onlineUsers);
-  
+
   const { logout } = useAuth();
 
   const updateUserOnlineStatus = (userId, isOnline, lastSeen = null) => {
@@ -126,9 +125,7 @@ const ChatPage = () => {
     initializeWebSocket(selectedChatId, token);
 
     const unsubscribeMessages = registerMessageHandler((messageData) => {
-      console.log('Received message 111:', messageData);
-      console.log('1111 :', messageData.type);
-      
+
       if (messageData.type === 'message') {
         
         const { chat_id, id, sender_user_id, text, timestamp } = messageData.message.message;

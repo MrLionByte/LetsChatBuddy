@@ -14,7 +14,7 @@ export const useSentInterests = () => {
             const data = await chatService.getSendedInterests();
             setSendedInterests(data);
         } catch (err) {
-            console.error('Error fetching received interests:', err);
+            // console.error('Error fetching received interests:', err);
         } finally {
             setLoading(false);
             setFetchFromBackend(false);
